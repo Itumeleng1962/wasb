@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Award, DollarSign, Leaf, Users, Zap, HeartHandshake } from "lucide-react"
+import { Award, Banknote, Leaf, Users, Zap, HeartHandshake } from "lucide-react"
 
 const benefits = [
   {
@@ -8,7 +8,7 @@ const benefits = [
     description: "Over 35 years of experience delivering exceptional propane services with certified professionals.",
   },
   {
-    icon: DollarSign,
+    icon: Banknote,
     title: "Competitive Pricing",
     description: "Transparent pricing with flexible payment plans and budget options to fit your needs.",
   },
@@ -43,7 +43,7 @@ export function Benefits() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gradient mb-4 text-balance">Why Choose ProGas Energy?</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gradient mb-4 text-balance">Why Choose WASB Gas Distributers?</h2>
           <p className="text-lg text-muted-foreground text-pretty">
             We're more than just a propane supplier—we're your trusted energy partner committed to excellence.
           </p>

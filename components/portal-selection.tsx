@@ -99,7 +99,20 @@ export function PortalSelection() {
           <p className="text-muted-foreground mb-6 text-lg">
             Need help accessing your portal? Contact our support team.
           </p>
-          <Button variant="outline" size="lg" className="luxury-border bg-transparent text-primary hover:bg-primary hover:text-white premium-hover">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="luxury-border bg-transparent text-primary hover:bg-primary hover:text-white premium-hover"
+            onClick={() => {
+              // Scroll to contact form or redirect to contact page
+              const contactSection = document.getElementById('contact')
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' })
+              } else {
+                window.location.href = '/contact'
+              }
+            }}
+          >
             Get Support
           </Button>
         </div>

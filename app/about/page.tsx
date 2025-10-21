@@ -40,7 +40,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       <PageHeader
-        title="About ProGas Energy"
+        title="About WASB Gas Distributers"
         description="Leading the propane industry with reliable service, innovative solutions, and unwavering commitment to safety since 1985."
       />
 
@@ -51,7 +51,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Your Trusted Energy Partner</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                For over three decades, ProGas Energy has been at the forefront of propane delivery and energy
+                For over three decades, WASB Gas Distributers has been at the forefront of propane delivery and energy
                 solutions. We've built our reputation on reliability, safety, and exceptional customer service.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -74,7 +74,7 @@ export default function AboutPage() {
               <div className="glass-card p-8 rounded-2xl">
                 <img
                   src="/modern-propane-facility-with-trucks.jpg"
-                  alt="ProGas Energy facility"
+                  alt="WASB Gas Distributers facility"
                   className="rounded-lg w-full"
                 />
               </div>
@@ -130,7 +130,7 @@ export default function AboutPage() {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card p-12 rounded-2xl text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Experience the ProGas Difference?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Experience the WASB Gas Distributers Difference?</h2>
             <p className="text-lg text-muted-foreground mb-8">
               Join thousands of satisfied customers who trust us for their propane needs.
             </p>

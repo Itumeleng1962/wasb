@@ -1,7 +1,10 @@
+"use client"
+
 import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
 import { Check, ArrowRight } from "lucide-react"
 import Link from "next/link"
+
 
 export default function CylindersPage() {
   const cylinderSizes = [
@@ -9,28 +12,28 @@ export default function CylindersPage() {
       name: "20 lb Cylinder",
       capacity: "20 lbs / 4.7 gallons",
       uses: ["Grills", "Patio heaters", "Small appliances"],
-      price: "From $49.99",
+      price: "From R49.99",
       popular: true,
     },
     {
       name: "30 lb Cylinder",
       capacity: "30 lbs / 7 gallons",
       uses: ["RVs", "Forklifts", "Commercial cooking"],
-      price: "From $79.99",
+      price: "From R79.99",
       popular: false,
     },
     {
       name: "40 lb Cylinder",
       capacity: "40 lbs / 9.4 gallons",
       uses: ["Industrial equipment", "Large appliances", "Construction"],
-      price: "From $99.99",
+      price: "From R99.99",
       popular: false,
     },
     {
       name: "100 lb Cylinder",
       capacity: "100 lbs / 23.6 gallons",
       uses: ["Commercial operations", "Temporary heating", "Events"],
-      price: "From $199.99",
+      price: "From R199.99",
       popular: false,
     },
   ]
@@ -69,11 +72,14 @@ export default function CylindersPage() {
                   </div>
                 ))}
               </div>
-              <Link href="/contact">
-                <Button className="gradient-accent text-white">
-                  Order Now <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+              <Button 
+                className="gradient-accent text-white"
+                onClick={() => {
+                  window.location.href = '/order'
+                }}
+              >
+                Order Now <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
@@ -144,7 +150,7 @@ export default function CylindersPage() {
                     <span className="text-2xl font-bold text-white">1</span>
                   </div>
                   <h3 className="font-bold mb-2">Bring Empty Cylinder</h3>
-                  <p className="text-sm text-muted-foreground">Visit any ProGas location</p>
+                  <p className="text-sm text-muted-foreground">Visit any WASB Gas Distributers location</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-sky flex items-center justify-center mx-auto mb-4">

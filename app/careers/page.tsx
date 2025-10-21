@@ -92,9 +92,9 @@ export default function CareersPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Work at ProGas?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Work at WASB Gas Distributers?</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                For over 35 years, ProGas Energy has been more than just a propane company—we're a family. We invest in
+                For over 35 years, WASB Gas Distributers has been more than just a propane company—we're a family. We invest in
                 our people, provide opportunities for growth, and create an environment where everyone can thrive.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -108,7 +108,7 @@ export default function CareersPage() {
             </div>
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
-                <img src="/diverse-team-of-energy-company-employees-smiling.jpg" alt="ProGas team" className="rounded-lg w-full" />
+                <img src="/diverse-team-of-energy-company-employees-smiling.jpg" alt="WASB Gas Distributers team" className="rounded-lg w-full" />
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function CareersPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Open Positions</h2>
-            <p className="text-lg text-muted-foreground">Find your next opportunity with ProGas</p>
+            <p className="text-lg text-muted-foreground">Find your next opportunity with WASB Gas Distributers</p>
           </div>
 
           <div className="space-y-4 max-w-4xl mx-auto">

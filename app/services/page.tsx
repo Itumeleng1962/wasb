@@ -1,6 +1,6 @@
 import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Truck, Factory, TestTube, Clock, Shield, DollarSign } from "lucide-react"
+import { ArrowRight, Truck, Factory, TestTube, Clock, Shield, Banknote } from "lucide-react"
 import Link from "next/link"
 
 export default function ServicesPage() {
@@ -43,7 +43,7 @@ export default function ServicesPage() {
       description: "All services performed by certified professionals following strict safety protocols.",
     },
     {
-      icon: DollarSign,
+      icon: Banknote,
       title: "Competitive Pricing",
       description: "Transparent pricing with no hidden fees and flexible payment options.",
     },
@@ -97,8 +97,10 @@ export default function ServicesPage() {
                     </div>
 
                     <Link href={service.href}>
-                      <Button className="gradient-accent text-white">
-                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="gradient-accent text-white" asChild>
+                        <span>
+                          Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                        </span>
                       </Button>
                     </Link>
                   </div>
@@ -124,7 +126,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose ProGas Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose WASB Gas Distributers Services</h2>
             <p className="text-lg text-muted-foreground">Excellence in every aspect of service delivery</p>
           </div>
 

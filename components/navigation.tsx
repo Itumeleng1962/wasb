@@ -10,6 +10,7 @@ export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -96,8 +97,21 @@ export function Navigation() {
               <div
                 key={link.name}
                 className="relative group"
-                onMouseEnter={() => link.submenu && setOpenDropdown(link.name)}
-                onMouseLeave={() => setOpenDropdown(null)}
+                onMouseEnter={() => {
+                  if (link.submenu) {
+                    if (hoverTimeout) {
+                      clearTimeout(hoverTimeout)
+                      setHoverTimeout(null)
+                    }
+                    setOpenDropdown(link.name)
+                  }
+                }}
+                onMouseLeave={() => {
+                  const timeout = setTimeout(() => {
+                    setOpenDropdown(null)
+                  }, 150)
+                  setHoverTimeout(timeout)
+                }}
               >
                 <Link
                   href={link.href}
@@ -113,7 +127,21 @@ export function Navigation() {
 
                 {/* Dropdown Menu */}
                 {link.submenu && openDropdown === link.name && (
-                  <div className="absolute top-full left-0 mt-2 w-56 glass-card rounded-xl shadow-2xl py-3 slide-in-up luxury-border">
+                  <div 
+                    className="absolute top-full left-0 mt-2 w-56 glass-card rounded-xl shadow-2xl py-3 slide-in-up luxury-border"
+                    onMouseEnter={() => {
+                      if (hoverTimeout) {
+                        clearTimeout(hoverTimeout)
+                        setHoverTimeout(null)
+                      }
+                    }}
+                    onMouseLeave={() => {
+                      const timeout = setTimeout(() => {
+                        setOpenDropdown(null)
+                      }, 150)
+                      setHoverTimeout(timeout)
+                    }}
+                  >
                     {link.submenu.map((sublink) => (
                       <Link
                         key={sublink.name}

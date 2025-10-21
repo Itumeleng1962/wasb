@@ -9,19 +9,19 @@ import { MapPin, Search } from "lucide-react"
 import { useState } from "react"
 
 const locations = [
-  { state: "Illinois", cities: "Chicago, Springfield, Peoria, Rockford" },
-  { state: "Texas", cities: "Austin, Houston, Dallas, San Antonio" },
-  { state: "Colorado", cities: "Denver, Colorado Springs, Boulder, Fort Collins" },
-  { state: "Oregon", cities: "Portland, Eugene, Salem, Bend" },
-  { state: "Arizona", cities: "Phoenix, Tucson, Mesa, Scottsdale" },
-  { state: "Tennessee", cities: "Nashville, Memphis, Knoxville, Chattanooga" },
+  { province: "Gauteng", cities: "Johannesburg, Pretoria, Centurion, Sandton" },
+  { province: "Western Cape", cities: "Cape Town, Stellenbosch, Paarl, George" },
+  { province: "KwaZulu-Natal", cities: "Durban, Pietermaritzburg, Newcastle, Richards Bay" },
+  { province: "Eastern Cape", cities: "Port Elizabeth, East London, Grahamstown, Uitenhage" },
+  { province: "Free State", cities: "Bloemfontein, Welkom, Bethlehem, Kroonstad" },
+  { province: "Limpopo", cities: "Polokwane, Tzaneen, Lephalale, Mokopane" },
 ]
 
 export function Locations() {
   const [zipCode, setZipCode] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [zipError, setZipError] = useState<string | null>(null)
-  const [searchResult, setSearchResult] = useState<{ city: string; state: string } | null>(null)
+  const [searchResult, setSearchResult] = useState<{ city: string; province: string } | null>(null)
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -29,28 +29,28 @@ export function Locations() {
     setSearchResult(null)
 
     const zip = zipCode.trim()
-    const isFiveDigitZip = /^\d{5}$/.test(zip)
-    if (!isFiveDigitZip) {
-      setZipError("Please enter a valid 5-digit ZIP code.")
+    const isFourDigitZip = /^\d{4}$/.test(zip)
+    if (!isFourDigitZip) {
+      setZipError("Please enter a valid 4-digit postal code.")
       return
     }
 
     try {
       setIsLoading(true)
-      const response = await fetch(`https://api.zippopotam.us/us/${zip}`)
+      const response = await fetch(`https://api.zippopotam.us/za/${zip}`)
       if (!response.ok) {
-        throw new Error("ZIP code not found")
+        throw new Error("Postal code not found")
       }
       const data = await response.json()
       const place = data.places?.[0]
       if (!place) {
-        throw new Error("No location data for this ZIP code")
+        throw new Error("No location data for this postal code")
       }
       const city = place["place name"] as string
-      const state = data["state"] || place["state"]
-      setSearchResult({ city, state })
+      const province = data["state"] || place["state"]
+      setSearchResult({ city, province })
     } catch (err) {
-      setZipError("We couldn't find that ZIP code. Please try another.")
+      setZipError("We couldn't find that postal code. Please try another.")
     } finally {
       setIsLoading(false)
     }
@@ -65,10 +65,10 @@ export function Locations() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gradient mb-4 text-balance">
-            Find ProGas Energy Near You
+            Find WASB Gas Distributers Near You
           </h2>
           <p className="text-lg text-muted-foreground text-pretty">
-            We proudly serve communities across the nation with local service and national reliability.
+            We proudly serve communities across South Africa with local service and national reliability.
           </p>
         </div>
 
@@ -81,10 +81,14 @@ export function Locations() {
                   <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                   <Input
                     type="text"
-                    placeholder="Enter your ZIP code"
+                    placeholder="Enter your postal code"
                     value={zipCode}
-                    onChange={(e) => setZipCode(e.target.value)}
+                    onChange={(e) => {
+                      const value = e.target.value.replace(/\D/g, '').slice(0, 4)
+                      setZipCode(value)
+                    }}
                     className="pl-10 h-12 text-lg"
+                    maxLength={4}
                   />
                 </div>
                 <Button
@@ -97,7 +101,7 @@ export function Locations() {
                 </Button>
               </div>
               <p className="text-sm text-muted-foreground text-center">
-                Enter your ZIP code to find the nearest ProGas Energy location and get instant pricing.
+                Enter your postal code to find the nearest WASB Gas Distributers location and get instant pricing.
               </p>
             </form>
 
@@ -113,13 +117,33 @@ export function Locations() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Nearest service area</p>
-                    <h4 className="text-lg font-bold text-foreground">{searchResult.city}, {searchResult.state}</h4>
+                    <h4 className="text-lg font-bold text-foreground">{searchResult.city}, {searchResult.province}</h4>
                     <p className="text-sm text-muted-foreground mt-1">
                       Great news! We serve this area. Get instant pricing and schedule delivery.
                     </p>
                     <div className="mt-3 flex gap-3">
-                      <Button className="gradient-accent text-white">Get Instant Pricing</Button>
-                      <Button variant="outline">Contact Us</Button>
+                      <Button 
+                        className="gradient-accent text-white"
+                        onClick={() => {
+                          window.location.href = '/order'
+                        }}
+                      >
+                        Get Instant Pricing
+                      </Button>
+                      <Button 
+                        variant="outline"
+                        onClick={() => {
+                          // Scroll to contact form or redirect to contact page
+                          const contactSection = document.getElementById('contact')
+                          if (contactSection) {
+                            contactSection.scrollIntoView({ behavior: 'smooth' })
+                          } else {
+                            window.location.href = '/contact'
+                          }
+                        }}
+                      >
+                        Contact Us
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -142,7 +166,7 @@ export function Locations() {
                     <MapPin className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-2">{location.state}</h4>
+                    <h4 className="font-bold text-foreground mb-2">{location.province}</h4>
                     <p className="text-sm text-muted-foreground">{location.cities}</p>
                   </div>
                 </div>
@@ -154,7 +178,20 @@ export function Locations() {
         {/* CTA */}
         <div className="mt-16 text-center">
           <p className="text-muted-foreground mb-4">Don't see your area listed? We're always expanding!</p>
-          <Button variant="outline" size="lg" className="border-2 bg-transparent">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-2 bg-transparent"
+            onClick={() => {
+              // Scroll to contact form or redirect to contact page
+              const contactSection = document.getElementById('contact')
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' })
+              } else {
+                window.location.href = '/contact'
+              }
+            }}
+          >
             Contact Us About Service
           </Button>
         </div>

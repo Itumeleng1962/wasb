@@ -12,7 +12,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "ProGas Energy - Premium Propane & Energy Solutions",
+  title: "WASB Gas Distributers - Premium Propane & Energy Solutions",
   description:
     "Your trusted partner for reliable propane delivery and energy services. Experience premium service with modern convenience.",
   generator: "v0.app",

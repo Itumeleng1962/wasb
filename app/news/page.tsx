@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function NewsPage() {
   const featuredPost = {
-    title: "ProGas Energy Expands Service to Three New States",
+    title: "WASB Gas Distributers Expands Service to Three New States",
     excerpt:
       "We're excited to announce our expansion into Colorado, Wyoming, and Montana, bringing reliable propane service to thousands of new customers.",
     date: "March 15, 2025",
@@ -33,7 +33,7 @@ export default function NewsPage() {
       slug: "improve-energy-efficiency",
     },
     {
-      title: "ProGas Receives Safety Excellence Award",
+      title: "WASB Gas Distributers Receives Safety Excellence Award",
       excerpt: "Recognized by the National Propane Gas Association for outstanding safety record and practices.",
       date: "February 28, 2025",
       category: "Company News",
@@ -73,7 +73,7 @@ export default function NewsPage() {
     <div className="min-h-screen">
       <PageHeader
         title="News & Insights"
-        description="Stay informed with the latest updates, industry news, and helpful tips from ProGas Energy."
+        description="Stay informed with the latest updates, industry news, and helpful tips from WASB Gas Distributers."
       />
 
       {/* Featured Post */}

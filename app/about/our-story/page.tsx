@@ -7,7 +7,7 @@ export default function OurStoryPage() {
       year: "1985",
       title: "The Beginning",
       description:
-        "ProGas Energy was founded with a simple mission: provide reliable propane service to local communities.",
+        "WASB Gas Distributers was founded with a simple mission: provide reliable propane service to local communities.",
       icon: MapPin,
     },
     {

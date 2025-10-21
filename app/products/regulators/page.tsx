@@ -1,3 +1,5 @@
+"use client"
+
 import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
 import { Check, ArrowRight, Shield, Wrench, Gauge } from "lucide-react"
@@ -86,11 +88,14 @@ export default function RegulatorsPage() {
                       ))}
                     </div>
 
-                    <Link href="/contact">
-                      <Button className="gradient-accent text-white">
-                        Order Now <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </Link>
+                    <Button 
+                      className="gradient-accent text-white"
+                      onClick={() => {
+                        window.location.href = '/order'
+                      }}
+                    >
+                      Order Now <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
                   </div>
 
                   <div className={isEven ? "" : "lg:col-start-1 lg:row-start-1"}>

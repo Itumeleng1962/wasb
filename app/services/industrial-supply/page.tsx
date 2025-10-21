@@ -73,7 +73,7 @@ export default function IndustrialSupplyPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Power Your Business with ProGas</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Power Your Business with WASB Gas Distributers</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 We understand that your business depends on reliable energy. Our industrial supply service provides
                 consistent, cost-effective propane solutions tailored to your operational needs.
@@ -147,7 +147,7 @@ export default function IndustrialSupplyPage() {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose ProGas Industrial</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose WASB Gas Distributers Industrial</h2>
             <p className="text-lg text-muted-foreground">Built for business, backed by experience</p>
           </div>
 
@@ -190,7 +190,7 @@ export default function IndustrialSupplyPage() {
               </div>
 
               <p className="text-muted-foreground leading-relaxed text-center">
-                "ProGas transformed our propane supply chain with their industrial solutions. The dedicated account
+                "WASB Gas Distributers transformed our propane supply chain with their industrial solutions. The dedicated account
                 manager and optimized delivery schedule have significantly reduced our operational costs while ensuring
                 we never experience supply interruptions."
               </p>

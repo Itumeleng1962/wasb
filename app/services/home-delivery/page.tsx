@@ -189,7 +189,7 @@ export default function HomeDeliveryPage() {
           <div className="glass-card p-12 rounded-2xl text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Switch to Automatic Delivery?</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Join thousands of homeowners who trust ProGas for reliable propane delivery.
+              Join thousands of homeowners who trust WASB Gas Distributers for reliable propane delivery.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">

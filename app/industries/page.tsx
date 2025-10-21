@@ -85,8 +85,10 @@ export default function IndustriesPage() {
                     </div>
 
                     <Link href={industry.href}>
-                      <Button className="gradient-accent text-white">
-                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="gradient-accent text-white" asChild>
+                        <span>
+                          Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                        </span>
                       </Button>
                     </Link>
                   </div>
@@ -113,7 +115,7 @@ export default function IndustriesPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Industries Choose ProGas</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Industries Choose WASB Gas Distributers</h2>
               <p className="text-lg text-muted-foreground">Trusted by businesses across multiple sectors</p>
             </div>
 

@@ -12,6 +12,7 @@ export default function ContactPage() {
     name: "",
     email: "",
     phone: "",
+    zipCode: "",
     subject: "",
     message: "",
   })
@@ -148,6 +149,27 @@ export default function ContactPage() {
                       className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent"
                     />
                   </div>
+                </div>
+
+                <div>
+                  <label htmlFor="zipCode" className="block text-sm font-medium mb-2">
+                    Postal Code *
+                  </label>
+                  <input
+                    type="text"
+                    id="zipCode"
+                    required
+                    maxLength={4}
+                    pattern="[0-9]{4}"
+                    value={formData.zipCode}
+                    onChange={(e) => {
+                      const value = e.target.value.replace(/\D/g, '').slice(0, 4)
+                      setFormData({ ...formData, zipCode: value })
+                    }}
+                    placeholder="1234"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent"
+                  />
+                  <p className="text-xs text-muted-foreground mt-1">Enter your 4-digit South African postal code</p>
                 </div>
 
                 <div>

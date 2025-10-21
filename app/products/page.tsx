@@ -79,8 +79,10 @@ export default function ProductsPage() {
                     </div>
 
                     <Link href={category.href}>
-                      <Button className="gradient-accent text-white">
-                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                      <Button className="gradient-accent text-white" asChild>
+                        <span>
+                          Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                        </span>
                       </Button>
                     </Link>
                   </div>

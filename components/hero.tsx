@@ -8,8 +8,8 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-muted to-background">
       {/* Background with gradient overlay */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/modern-propane-tank-installation-professional-serv.jpg')] bg-cover bg-center opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/60 to-primary/80" />
+        <div className="absolute inset-0 bg-[url('/modern-propane-tank-installation-professional-serv.jpg')] bg-cover bg-center opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/40 to-primary/60" />
       </div>
 
       {/* Animated background elements */}
@@ -43,6 +43,9 @@ export function Hero() {
             <Button
               size="lg"
               className="bg-accent text-white hover:opacity-90 transition-all duration-300 text-lg px-10 py-6 group premium-hover"
+              onClick={() => {
+                window.location.href = '/order'
+              }}
             >
               ORDER NOW!
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -51,6 +54,15 @@ export function Hero() {
               size="lg"
               variant="outline"
               className="luxury-border-accent bg-transparent border-accent text-accent hover:bg-accent hover:text-white text-lg px-10 py-6 premium-hover"
+              onClick={() => {
+                // Scroll to contact form or redirect to contact page
+                const contactSection = document.getElementById('contact')
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' })
+                } else {
+                  window.location.href = '/contact'
+                }
+              }}
             >
               Contact Us
             </Button>

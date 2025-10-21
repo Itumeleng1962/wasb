@@ -44,7 +44,7 @@ export default function HospitalityPage() {
 
   const testimonial = {
     quote:
-      "ProGas has been our propane partner for over 10 years. Their reliable service and competitive pricing have been crucial to our restaurant's success. The dedicated account manager understands our needs and ensures we never run out during peak seasons.",
+      "WASB Gas Distributers has been our propane partner for over 10 years. Their reliable service and competitive pricing have been crucial to our restaurant's success. The dedicated account manager understands our needs and ensures we never run out during peak seasons.",
     author: "Maria Rodriguez",
     position: "Owner, Bella Vista Restaurant",
   }

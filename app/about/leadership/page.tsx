@@ -7,7 +7,7 @@ export default function LeadershipPage() {
     {
       name: "Michael Anderson",
       role: "Chief Executive Officer",
-      bio: "With over 25 years in the energy sector, Michael leads ProGas with a vision for innovation and sustainable growth.",
+      bio: "With over 25 years in the energy sector, Michael leads WASB Gas Distributers with a vision for innovation and sustainable growth.",
       image: "/professional-black-male-ceo-executive-headshot.jpg",
     },
     {
@@ -46,7 +46,7 @@ export default function LeadershipPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Leadership Team"
-        description="Meet the experienced professionals guiding ProGas Energy toward a sustainable and innovative future."
+        description="Meet the experienced professionals guiding WASB Gas Distributers toward a sustainable and innovative future."
       />
 
       <section className="py-20">

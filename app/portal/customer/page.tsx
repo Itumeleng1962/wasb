@@ -163,7 +163,7 @@ export default function CustomerPortalPage() {
               </div>
 
               <div className="glass-card p-6 rounded-xl mt-6 bg-accent/5 border border-accent/20">
-                <h3 className="font-bold mb-2">New to ProGas?</h3>
+                <h3 className="font-bold mb-2">New to WASB Gas Distributers?</h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   Sign up for service and get instant access to your customer portal.
                 </p>
