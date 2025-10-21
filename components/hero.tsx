@@ -25,17 +25,17 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-6 py-3 rounded-full mb-8 slide-in-up luxury-border">
             <Flame className="h-5 w-5 text-accent pulse-primary" />
-            <span className="text-sm font-medium text-white">Trusted Energy Partner Since 1985</span>
+            <span className="text-sm font-medium text-white">Local, Safe & Reliable LPG Gas Supply</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 slide-in-up text-balance">
-            <span className="text-accent">Premium Propane</span> Delivery & Energy Solutions
+            <span className="text-accent">WASB Gas</span> Distributers
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl sm:text-2xl text-white/90 mb-12 slide-in-up max-w-2xl mx-auto text-pretty">
-            Experience reliable, safe, and efficient energy services tailored to your home or business needs.
+            Get local, safe & reliable supply of LPG gas bottles in the Gauteng area. We're gas distributers, bringing the benefits of bottled gas to your home, no matter where you live in Gauteng.
           </p>
 
           {/* CTA Buttons */}
@@ -44,7 +44,7 @@ export function Hero() {
               size="lg"
               className="bg-accent text-white hover:opacity-90 transition-all duration-300 text-lg px-10 py-6 group premium-hover"
             >
-              Get Started Today
+              ORDER NOW!
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
@@ -52,7 +52,7 @@ export function Hero() {
               variant="outline"
               className="luxury-border-accent bg-transparent border-accent text-accent hover:bg-accent hover:text-white text-lg px-10 py-6 premium-hover"
             >
-              View Services
+              Contact Us
             </Button>
           </div>
 

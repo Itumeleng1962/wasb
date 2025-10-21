@@ -25,54 +25,54 @@ export default function ContactPage() {
   const contactMethods = [
     {
       icon: Phone,
-      title: "Call Us",
-      details: "0782618059",
-      description: "24/7 customer service and emergency support",
+      title: "Phone",
+      details: "+27 11568 7912",
+      description: "Call us for immediate assistance",
+    },
+    {
+      icon: Phone,
+      title: "Phone (Courage)",
+      details: "+27 83 297 6995",
+      description: "Contact Courage directly",
+    },
+    {
+      icon: Phone,
+      title: "Phone (Noah)",
+      details: "+27 61 654 7229",
+      description: "Contact Noah directly",
     },
     {
       icon: Mail,
-      title: "Email Us",
-      details: "info@progasenergy.com",
-      description: "We'll respond within 24 hours",
-    },
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      details: "123 Energy Way, Houston, TX 77001",
-      description: "Monday - Friday: 8am - 6pm",
-    },
-    {
-      icon: Clock,
-      title: "Business Hours",
-      details: "Mon-Fri: 8am - 6pm",
-      description: "Emergency service available 24/7",
+      title: "Email",
+      details: "admin@wasbdistributers.co.za",
+      description: "Send us an email for inquiries",
     },
   ]
 
   const locations = [
     {
-      city: "Houston, TX",
-      address: "123 Energy Way, Houston, TX 77001",
-      phone: "0782618059",
-      hours: "Mon-Fri: 8am-6pm, Sat: 9am-2pm",
+      city: "Johannesburg",
+      address: "Gauteng, South Africa",
+      phone: "+27 11568 7912",
+      hours: "Service Area: Gauteng Wide",
     },
     {
-      city: "Dallas, TX",
-      address: "456 Propane Blvd, Dallas, TX 75201",
-      phone: "0782618059",
-      hours: "Mon-Fri: 8am-6pm, Sat: 9am-2pm",
+      city: "Pretoria",
+      address: "Gauteng, South Africa",
+      phone: "+27 83 297 6995",
+      hours: "Contact: Courage",
     },
     {
-      city: "Phoenix, AZ",
-      address: "789 Desert Drive, Phoenix, AZ 85001",
-      phone: "0782618059",
-      hours: "Mon-Fri: 8am-6pm, Sat: 9am-2pm",
+      city: "Centurion",
+      address: "Gauteng, South Africa",
+      phone: "+27 61 654 7229",
+      hours: "Contact: Noah",
     },
     {
-      city: "Denver, CO",
-      address: "321 Mountain Road, Denver, CO 80201",
-      phone: "0782618059",
-      hours: "Mon-Fri: 8am-6pm, Sat: 9am-2pm",
+      city: "Sandton",
+      address: "Gauteng, South Africa",
+      phone: "+27 11568 7912",
+      hours: "Service Area: Gauteng Wide",
     },
   ]
 
@@ -80,7 +80,7 @@ export default function ContactPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Contact Us"
-        description="Get in touch with our team. We're here to help with all your propane needs."
+        description="We're here to help! Get in contact with us today."
       />
 
       {/* Contact Methods */}
@@ -196,11 +196,11 @@ export default function ContactPage() {
               <div className="glass-card p-8 rounded-2xl mb-6">
                 <h3 className="text-xl font-bold mb-4">Emergency Service</h3>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  If you smell gas or have an emergency, evacuate immediately and call our 24/7 emergency line:
+                  If you smell gas or have an emergency, evacuate immediately and call our emergency line:
                 </p>
-                <a href="tel:0782618059" className="flex items-center gap-3 text-2xl font-bold text-accent">
+                <a href="tel:+27115687912" className="flex items-center gap-3 text-2xl font-bold text-accent">
                   <Phone className="h-6 w-6" />
-                  0782618059
+                  +27 11568 7912
                 </a>
               </div>
 

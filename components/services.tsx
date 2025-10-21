@@ -4,39 +4,39 @@ import { Home, Building2, Truck, Wrench, Gauge, Droplets } from "lucide-react"
 const services = [
   {
     icon: Home,
-    title: "Residential Propane",
-    description: "Reliable propane delivery for your home heating, cooking, and hot water needs.",
-    features: ["Automatic Delivery", "Budget Plans", "Tank Installation"],
+    title: "Gas for Home",
+    description: "WASB Gas Distributers has the perfect solution for all your LPG heating, hot water systems and cooking needs and is servicing customers Gauteng wide.",
+    features: ["LPG Heating", "Hot Water Systems", "Cooking Solutions"],
   },
   {
     icon: Building2,
-    title: "Commercial Solutions",
-    description: "Comprehensive energy solutions for businesses of all sizes.",
-    features: ["Bulk Delivery", "Fleet Services", "Custom Contracts"],
+    title: "Gas for Business",
+    description: "WASB Gas Distributers has a large range of gas products and services along with offering Free Next Day delivery to most areas of Gauteng.",
+    features: ["Large Range Products", "Free Next Day Delivery", "Gauteng Wide Service"],
   },
   {
     icon: Truck,
-    title: "Propane Delivery",
-    description: "Fast, safe, and convenient propane delivery on your schedule.",
-    features: ["Same-Day Service", "Scheduled Refills", "Emergency Delivery"],
+    title: "LPG Gas Delivery",
+    description: "Get local, safe & reliable supply of LPG gas bottles in the Gauteng area with professional delivery service.",
+    features: ["Same-Day Service", "Safe Delivery", "Gauteng Coverage"],
   },
   {
     icon: Wrench,
-    title: "Installation & Repair",
-    description: "Expert installation and maintenance services by certified technicians.",
-    features: ["Tank Installation", "System Repairs", "Safety Inspections"],
+    title: "Gas Products & Services",
+    description: "Comprehensive range of gas products and professional services for all your LPG needs.",
+    features: ["Gas Bottles", "Professional Service", "Quality Products"],
   },
   {
     icon: Gauge,
-    title: "Tank Monitoring",
-    description: "Smart tank monitoring technology for worry-free propane management.",
-    features: ["Real-Time Levels", "Auto-Ordering", "Mobile App"],
+    title: "Reliable Supply",
+    description: "Consistent and reliable LPG gas supply ensuring you never run out when you need it most.",
+    features: ["Consistent Supply", "Reliable Service", "Customer Focus"],
   },
   {
     icon: Droplets,
-    title: "Propane Appliances",
-    description: "Wide selection of propane-powered appliances and equipment.",
-    features: ["Water Heaters", "Generators", "Outdoor Living"],
+    title: "LPG Solutions",
+    description: "Complete LPG solutions for residential and commercial applications across Gauteng.",
+    features: ["Residential Solutions", "Commercial Applications", "Complete Service"],
   },
 ]
 
@@ -46,10 +46,9 @@ export function Services() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gradient mb-4 text-balance">Complete Energy Solutions</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gradient mb-4 text-balance">WASB Gas Distributers</h2>
           <p className="text-lg text-muted-foreground text-pretty">
-            From residential heating to commercial operations, we provide comprehensive propane services tailored to
-            your unique needs.
+            We're gas distributers, bringing the benefits of bottled gas to your home and business, no matter where you live in Gauteng.
           </p>
         </div>
 

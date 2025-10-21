@@ -20,6 +20,7 @@ export function Navigation() {
   }, [])
 
   const navLinks = [
+    { name: "Home", href: "/" },
     {
       name: "About",
       href: "/about",
@@ -60,6 +61,14 @@ export function Navigation() {
     { name: "News", href: "/news" },
     { name: "Careers", href: "/careers" },
     { name: "Contact", href: "/contact" },
+    {
+      name: "Portals",
+      href: "#",
+      submenu: [
+        { name: "Customer Portal", href: "/portal/customer" },
+        { name: "Dealer Portal", href: "/portal/dealer" },
+      ],
+    },
   ]
 
   return (
@@ -76,6 +85,7 @@ export function Navigation() {
           <div className="flex-shrink-0 mr-8">
             <Logo 
               size="md" 
+              showText={false}
               className="transition-all duration-300"
             />
           </div>
@@ -121,30 +131,7 @@ export function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
-            <Link href="/portal/customer">
-              <Button
-                size="sm"
-                className={`premium-hover px-4 py-2 whitespace-nowrap luxury-border ${
-                  isScrolled
-                    ? "bg-card text-foreground hover:bg-primary hover:text-primary-foreground"
-                    : "bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
-                }`}
-              >
-                Customer Portal
-              </Button>
-            </Link>
-            <Link href="/portal/dealer">
-              <Button
-                size="sm"
-                className={`premium-hover px-4 py-2 whitespace-nowrap luxury-border ${
-                  isScrolled
-                    ? "bg-card text-foreground hover:bg-primary hover:text-primary-foreground"
-                    : "bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground"
-                }`}
-              >
-                Dealer Portal
-              </Button>
-            </Link>
+            {/* Portals are now integrated into main navigation */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -184,20 +171,7 @@ export function Navigation() {
                 )}
               </div>
             ))}
-            <div className="pt-6 space-y-4 border-t border-border">
-              <div className="grid grid-cols-2 gap-4">
-                <Link href="/portal/customer" className="block">
-                  <Button size="sm" className="w-full luxury-border bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground premium-hover">
-                    Customer Login
-                  </Button>
-                </Link>
-                <Link href="/portal/dealer" className="block">
-                  <Button size="sm" className="w-full luxury-border bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground premium-hover">
-                    Dealer Portal
-                  </Button>
-                </Link>
-              </div>
-            </div>
+            {/* Portal buttons are now integrated into main navigation */}
           </div>
         )}
       </div>

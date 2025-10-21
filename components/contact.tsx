@@ -35,9 +35,9 @@ export function Contact() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gradient mb-4 text-balance">Get in Touch</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gradient mb-4 text-balance">Contact Us</h2>
           <p className="text-lg text-muted-foreground text-pretty">
-            Have questions? Need a quote? Our team is here to help you 24/7.
+            We're here to help! Get in contact with us today.
           </p>
         </div>
 
@@ -123,14 +123,27 @@ export function Contact() {
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground mb-2">Call Us</h4>
-                  <p className="text-muted-foreground mb-2">Available 24/7 for emergencies</p>
-                  <a
-                    href="tel:0782618059"
-                    className="text-xl font-bold text-[#009FFD] hover:text-[#0A1D56] transition-colors"
-                  >
-                    0782618059
-                  </a>
+                  <h4 className="font-bold text-foreground mb-2">Phone</h4>
+                  <div className="space-y-2">
+                    <a
+                      href="tel:+27115687912"
+                      className="block text-lg font-bold text-[#009FFD] hover:text-[#0A1D56] transition-colors"
+                    >
+                      +27 11568 7912
+                    </a>
+                    <a
+                      href="tel:+27832976995"
+                      className="block text-lg font-bold text-[#009FFD] hover:text-[#0A1D56] transition-colors"
+                    >
+                      +27 83 297 6995 (Courage)
+                    </a>
+                    <a
+                      href="tel:+27616547229"
+                      className="block text-lg font-bold text-[#009FFD] hover:text-[#0A1D56] transition-colors"
+                    >
+                      +27 61 654 7229 (Noah)
+                    </a>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -141,52 +154,17 @@ export function Contact() {
                   <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground mb-2">Email Us</h4>
-                  <p className="text-muted-foreground mb-2">We'll respond within 24 hours</p>
+                  <h4 className="font-bold text-foreground mb-2">Email</h4>
                   <a
-                    href="mailto:support@progasenergy.com"
+                    href="mailto:admin@wasbdistributers.co.za"
                     className="text-lg font-semibold text-[#009FFD] hover:text-[#0A1D56] transition-colors"
                   >
-                    support@progasenergy.com
+                    admin@wasbdistributers.co.za
                   </a>
                 </div>
               </div>
             </Card>
 
-            <Card className="glass-card p-8 rounded-2xl border-0 hover:shadow-xl transition-shadow">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center flex-shrink-0">
-                  <MessageSquare className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-foreground mb-2">Live Chat</h4>
-                  <p className="text-muted-foreground mb-2">Chat with our support team</p>
-                  <Button
-                    variant="link"
-                    className="text-lg font-semibold text-[#009FFD] hover:text-[#0A1D56] p-0 h-auto"
-                  >
-                    Start Chat →
-                  </Button>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="glass-card p-8 rounded-2xl border-0 hover:shadow-xl transition-shadow">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center flex-shrink-0">
-                  <Clock className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-foreground mb-2">Business Hours</h4>
-                  <div className="space-y-1 text-muted-foreground">
-                    <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
-                    <p>Saturday: 8:00 AM - 5:00 PM</p>
-                    <p>Sunday: 9:00 AM - 3:00 PM</p>
-                    <p className="text-[#FF8C32] font-semibold mt-2">Emergency Service: 24/7</p>
-                  </div>
-                </div>
-              </div>
-            </Card>
           </div>
         </div>
       </div>
