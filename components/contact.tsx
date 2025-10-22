@@ -142,6 +142,18 @@ export function Contact() {
             <Card className="glass-card p-8 rounded-2xl border-0 hover:shadow-xl transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center flex-shrink-0">
+                  <Clock className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-foreground mb-2">Address (Gauteng)</h4>
+                  <p className="text-muted-foreground">Bothma St & Deysel Rd</p>
+                  <p className="text-muted-foreground">Wilgespruit 190-Iq, Roodepoort, 1724</p>
+                </div>
+              </div>
+            </Card>
+            <Card className="glass-card p-8 rounded-2xl border-0 hover:shadow-xl transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center flex-shrink-0">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>

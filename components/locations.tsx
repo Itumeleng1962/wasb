@@ -9,12 +9,7 @@ import { MapPin, Search } from "lucide-react"
 import { useState } from "react"
 
 const locations = [
-  { province: "Gauteng", cities: "Johannesburg, Pretoria, Centurion, Sandton" },
-  { province: "Western Cape", cities: "Cape Town, Stellenbosch, Paarl, George" },
-  { province: "KwaZulu-Natal", cities: "Durban, Pietermaritzburg, Newcastle, Richards Bay" },
-  { province: "Eastern Cape", cities: "Port Elizabeth, East London, Grahamstown, Uitenhage" },
-  { province: "Free State", cities: "Bloemfontein, Welkom, Bethlehem, Kroonstad" },
-  { province: "Limpopo", cities: "Polokwane, Tzaneen, Lephalale, Mokopane" },
+  { province: "Gauteng", cities: "Bothma St & Deysel Rd, Wilgespruit 190-Iq, Roodepoort, 1724" },
 ]
 
 export function Locations() {

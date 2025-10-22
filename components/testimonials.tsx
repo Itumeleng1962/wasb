@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card"
 import { Star } from "lucide-react"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 const testimonials = [
   {
@@ -50,15 +50,8 @@ const testimonials = [
 ]
 
 export function Testimonials() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  const nextTestimonial = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length)
-  }
-
-  const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
-  }
+  const [isPaused, setIsPaused] = useState(false)
+  const trackRef = useRef<HTMLDivElement | null>(null)
 
   return (
     <section id="testimonials" className="py-24 bg-background">
@@ -71,37 +64,57 @@ export function Testimonials() {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <Card
-              key={index}
-              className="glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-0"
-            >
-              {/* Rating */}
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-[#FF8C32] text-[#FF8C32]" />
-                ))}
-              </div>
+        {/* Testimonials Marquee (single line, all cards) */}
+        <div 
+          className="relative overflow-hidden"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          <div
+            ref={trackRef}
+            className={`flex gap-8 whitespace-nowrap will-change-transform`}
+            style={{
+              animation: `testimonial-marquee 35s linear infinite`,
+              animationPlayState: isPaused ? 'paused' : 'running',
+            }}
+          >
+            {[...testimonials, ...testimonials].map((testimonial, index) => (
+              <div key={index} className="inline-block">
+                <Card className="glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-300 border-0 w-[380px]">
+                  {/* Rating */}
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-[#FF8C32] text-[#FF8C32]" />
+                    ))}
+                  </div>
 
-              {/* Testimonial Text */}
-              <p className="text-foreground/80 mb-6 text-pretty leading-relaxed">"{testimonial.text}"</p>
+                  {/* Testimonial Text */}
+                  <p className="text-foreground/80 mb-6 text-pretty leading-relaxed">"{testimonial.text}"</p>
 
-              {/* Customer Info */}
-              <div className="flex items-center gap-4">
-                <img
-                  src={testimonial.image || "/placeholder.svg"}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <div className="font-semibold text-foreground">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.location}</div>
-                </div>
+                  {/* Customer Info */}
+                  <div className="flex items-center gap-4">
+                    <img
+                      src={testimonial.image || "/placeholder.svg"}
+                      alt={testimonial.name}
+                      className="w-12 h-12 rounded-full object-cover"
+                    />
+                    <div>
+                      <div className="font-semibold text-foreground">{testimonial.name}</div>
+                      <div className="text-sm text-muted-foreground">{testimonial.location}</div>
+                    </div>
+                  </div>
+                </Card>
               </div>
-            </Card>
-          ))}
+            ))}
+          </div>
+
+          {/* Inline keyframes for marquee */}
+          <style>{`
+            @keyframes testimonial-marquee {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+          `}</style>
         </div>
 
         {/* Trust Badge */}

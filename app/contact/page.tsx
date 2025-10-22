@@ -52,26 +52,8 @@ export default function ContactPage() {
 
   const locations = [
     {
-      city: "Johannesburg",
-      address: "Gauteng, South Africa",
-      phone: "+27 11568 7912",
-      hours: "Service Area: Gauteng Wide",
-    },
-    {
-      city: "Pretoria",
-      address: "Gauteng, South Africa",
-      phone: "+27 83 297 6995",
-      hours: "Contact: Courage",
-    },
-    {
-      city: "Centurion",
-      address: "Gauteng, South Africa",
-      phone: "+27 61 654 7229",
-      hours: "Contact: Noah",
-    },
-    {
-      city: "Sandton",
-      address: "Gauteng, South Africa",
+      city: "Gauteng",
+      address: "Bothma St & Deysel Rd, Wilgespruit 190-Iq, Roodepoort, 1724",
       phone: "+27 11568 7912",
       hours: "Service Area: Gauteng Wide",
     },
@@ -245,10 +227,10 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Locations</h2>
-            <p className="text-lg text-muted-foreground">Visit us at any of our branch locations</p>
+            <p className="text-lg text-muted-foreground">Gauteng headquarters and service coverage</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-1 gap-6 max-w-3xl mx-auto">
             {locations.map((location, index) => (
               <div key={index} className="glass-card p-6 rounded-xl">
                 <h3 className="text-xl font-bold mb-3">{location.city}</h3>

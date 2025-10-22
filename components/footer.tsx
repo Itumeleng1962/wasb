@@ -136,11 +136,6 @@ export function Footer() {
         <div className="pt-12 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-white/60 text-base">© {new Date().getFullYear()} All rights reserved.</p>
-            <div className="flex items-center gap-6 text-base text-white/60">
-              <span className="flex items-center gap-2">
-                Made with <span className="text-accent pulse-primary">❤️</span> for our customers
-              </span>
-            </div>
           </div>
         </div>
       </div>
