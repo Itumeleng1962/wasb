@@ -147,6 +147,32 @@ export function Locations() {
           </Card>
         </div>
 
+        {/* Company Delivery Fleet */}
+        <div className="max-w-5xl mx-auto mb-16">
+          <h3 className="text-2xl font-bold text-center text-foreground mb-8">Our Delivery Fleet</h3>
+          <div className="glass-card p-6 rounded-2xl overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="relative rounded-lg overflow-hidden">
+                <img 
+                  src="/Trucks.png" 
+                  alt="WASB Gas Distributers delivery fleet with company logo" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="relative rounded-lg overflow-hidden">
+                <img 
+                  src="/Truck.png" 
+                  alt="WASB Gas Distributers delivery truck with company logo" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <p className="text-center text-sm text-muted-foreground mt-4">
+              Our branded fleet ensures professional and reliable delivery to your location
+            </p>
+          </div>
+        </div>
+
         {/* Service Areas */}
         <div className="max-w-5xl mx-auto">
           <h3 className="text-2xl font-bold text-center text-foreground mb-8">Our Service Areas</h3>

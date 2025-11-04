@@ -52,6 +52,31 @@ export function Services() {
           </p>
         </div>
 
+        {/* Company Fleet Showcase */}
+        <div className="mb-16 max-w-4xl mx-auto">
+          <div className="glass-card p-6 rounded-2xl overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="relative rounded-lg overflow-hidden">
+                <img 
+                  src="/Trucks.png" 
+                  alt="WASB Gas Distributers fleet with company logo" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="relative rounded-lg overflow-hidden">
+                <img 
+                  src="/Truck.png" 
+                  alt="WASB Gas Distributers delivery truck with company logo" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+            <p className="text-center text-sm text-muted-foreground mt-4">
+              Our professional fleet delivers reliable LPG gas service across Gauteng
+            </p>
+          </div>
+        </div>
+
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {

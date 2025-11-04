@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-muted to-background">
       {/* Background with gradient overlay */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/modern-propane-tank-installation-professional-serv.jpg')] bg-cover bg-center opacity-40" />
+        <div className="absolute inset-0 bg-[url('/bg.png')] bg-cover bg-center opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/40 to-primary/60" />
       </div>
 
@@ -17,6 +17,24 @@ export function Hero() {
         <div className="absolute top-20 left-10 w-96 h-96 bg-secondary/30 rounded-full mix-blend-multiply filter blur-3xl opacity-40 floating-animation" />
         <div className="absolute top-40 right-10 w-80 h-80 bg-accent/30 rounded-full mix-blend-multiply filter blur-3xl opacity-40 floating-animation" style={{animationDelay: '2s'}} />
         <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-primary/20 rounded-full mix-blend-multiply filter blur-3xl opacity-40 floating-animation" style={{animationDelay: '4s'}} />
+      </div>
+
+      {/* Company Trucks Showcase */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute bottom-0 right-0 w-1/3 max-w-md opacity-30 hidden lg:block">
+          <img 
+            src="/Trucks.png" 
+            alt="WASB Gas Distributers fleet" 
+            className="w-full h-auto object-contain"
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 w-1/4 max-w-xs opacity-25 hidden xl:block">
+          <img 
+            src="/Truck.png" 
+            alt="WASB Gas Distributers delivery truck" 
+            className="w-full h-auto object-contain"
+          />
+        </div>
       </div>
 
       {/* Content */}
