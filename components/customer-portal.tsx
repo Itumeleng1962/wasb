@@ -11,7 +11,8 @@ import {
   ChevronDown,
   MapPin,
   Calendar,
-  Clock
+  Clock,
+  Gauge
 } from "lucide-react"
 
 interface Tank {
@@ -58,6 +59,7 @@ type PortalView = 'fuel-levels' | 'schedule-deliveries' | 'manage-account' | 'ma
 
 export function CustomerPortal() {
   const [activeView, setActiveView] = useState<PortalView>('fuel-levels')
+  const [showDeliveryTip, setShowDeliveryTip] = useState<boolean>(false)
 
   const getFuelLevelColor = (level: number) => {
     if (level > 50) return "bg-gradient-to-r from-green-500 to-green-600"
@@ -67,46 +69,86 @@ export function CustomerPortal() {
 
   const renderFuelLevels = () => (
     <div className="space-y-6">
+      {/* Header + Help Row */}
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold text-foreground">Account Overview</h2>
-        <Button variant="ghost" size="sm" className="text-muted-foreground">
-          How to tell if you need a delivery?
-          <ChevronDown className="ml-2 h-4 w-4" />
-        </Button>
       </div>
-      
-      <div className="space-y-4">
-        <h3 className="text-lg font-semibold text-foreground">Select Your Tank</h3>
-        {mockTanks.map((tank) => (
-          <Card key={tank.id} className="p-6 hover:shadow-lg hover:shadow-red-500/10 transition-all duration-300 border-red-100 dark:border-red-800 bg-gradient-to-r from-white to-red-50/20 dark:from-gray-800 dark:to-red-950/10">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-12 bg-gradient-to-br from-red-100 to-red-200 border-2 border-red-300 rounded-lg flex items-center justify-center">
-                  <Fuel className="h-6 w-6 text-red-600" />
-                </div>
-                <div>
-                  <div className="flex items-center space-x-2">
-                    <span className="font-semibold text-foreground">{tank.id}.</span>
-                    <span className="text-foreground">{tank.address}</span>
-                    <span className="text-sm text-muted-foreground">({tank.capacity})</span>
-                  </div>
-                  <div className="mt-2">
-                    <div className="flex items-center space-x-2 mb-1">
-                      <div className="w-32 h-2 bg-gray-200 rounded-full overflow-hidden">
-                        <div 
-                          className={`h-full ${getFuelLevelColor(tank.fuelLevel)} transition-all duration-300`}
-                          style={{ width: `${tank.fuelLevel}%` }}
-                        />
-                      </div>
-                      <span className="text-sm font-medium text-foreground">{tank.fuelLevel}%</span>
-                    </div>
-                    <p className="text-sm text-muted-foreground">{tank.deliveryStatus}</p>
-                  </div>
+
+      <Card className="p-4 border border-gray-200 dark:border-gray-800">
+        <button
+          onClick={() => setShowDeliveryTip(!showDeliveryTip)}
+          className="w-full flex items-center justify-between text-left"
+        >
+          <span className="text-red-600 font-medium">How to tell you need a delivery?</span>
+          <ChevronDown className={`h-5 w-5 text-red-600 transition-transform ${showDeliveryTip ? 'rotate-180' : ''}`} />
+        </button>
+        {showDeliveryTip && (
+          <div className="mt-3 text-sm text-muted-foreground">
+            Check your tank gauge regularly. When the level drops below 30%, it's time to schedule a delivery.
+          </div>
+        )}
+      </Card>
+
+      {/* Section Title */}
+      <h3 className="text-lg font-semibold text-foreground">Select Your Gas Tank</h3>
+
+      {/* Frame Header Row */}
+      <div className="grid grid-cols-4 gap-4 text-sm text-muted-foreground">
+        <div>Frame</div>
+        <div>Frame 4</div>
+        <div>Frame 7</div>
+        <div>Frame 10</div>
+      </div>
+
+      {/* Tank Cards */}
+      <div className="space-y-6">
+        {mockTanks.map((tank, idx) => (
+          <Card key={tank.id} className="p-6 border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 rounded-none">
+            {/* Per-card mini frame row (optional visual aid) */}
+            <div className="grid grid-cols-4 gap-4 text-xs text-muted-foreground mb-4">
+              <div>{idx === 0 ? 'Frame 2' : idx === 1 ? 'Frame 3' : 'Frame 3'}</div>
+              <div>{`Frame ${4 + idx}`}</div>
+              <div>{`Frame ${7 + idx}`}</div>
+              <div>{`Frame ${10 + idx}`}</div>
+            </div>
+
+            <div className="grid grid-cols-4 gap-6 items-center">
+              {/* Tank Icon */}
+              <div className="flex items-center justify-center">
+                <div className="w-16 h-12 border-2 border-gray-400 rounded-md flex items-center justify-center">
+                  <Fuel className="h-5 w-5 text-gray-600" />
                 </div>
               </div>
-              <div className="text-right text-sm text-muted-foreground">
-                <p>Estimated Next Delivery: {tank.estimatedDelivery}</p>
-                <p>Last Delivery: {tank.lastDelivery}</p>
+
+              {/* Address + Specs */}
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="font-semibold text-foreground">{tank.id}.</span>
+                  <span className="font-semibold text-foreground">{tank.address}</span>
+                  <span className="font-semibold text-foreground">{tank.capacity}</span>
+                </div>
+                <p className="text-sm text-muted-foreground mt-1">{tank.address}</p>
+                <p className="text-sm text-muted-foreground">{tank.capacity} Propane Fuel Tank</p>
+              </div>
+
+              {/* Fill level with thick bar and % inside */}
+              <div>
+                <div className="w-full bg-gray-200 rounded-md h-8 overflow-hidden">
+                  <div
+                    className={`h-full flex items-center justify-center text-white font-semibold text-sm ${getFuelLevelColor(tank.fuelLevel)}`}
+                    style={{ width: `${tank.fuelLevel}%` }}
+                  >
+                    {tank.fuelLevel}%
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mt-2">{tank.deliveryStatus}</p>
+                <p className="text-sm text-muted-foreground">Estimated Next Delivery: {tank.estimatedDelivery}</p>
+              </div>
+
+              {/* Last Delivery */}
+              <div className="text-sm text-foreground">
+                <p className="font-semibold">Last Delivery:</p>
+                <p className="mt-1">{tank.lastDelivery}</p>
               </div>
             </div>
           </Card>
@@ -299,63 +341,49 @@ export function CustomerPortal() {
               </Card>
             </div>
 
-            {/* Action Menu */}
-            <div className="space-y-4">
-              <Button
-                onClick={() => setActiveView('fuel-levels')}
-                className={`w-full justify-start h-16 text-left transition-all duration-300 ${
-                  activeView === 'fuel-levels' 
-                    ? 'bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg shadow-red-500/25' 
-                    : 'bg-gradient-to-r from-gray-100 to-gray-200 text-gray-600 hover:from-red-50 hover:to-red-100 hover:text-red-700 dark:from-gray-800 dark:to-gray-700 dark:text-gray-300 dark:hover:from-red-950/30 dark:hover:to-red-900/30'
-                }`}
-              >
-                <Fuel className="mr-3 h-6 w-6" />
-                <div>
-                  <div className="font-semibold">VIEW FUEL LEVELS</div>
-                </div>
-              </Button>
+            {/* Action Menu - flat, straight like provided design */}
+            <div className="border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+              <nav className="p-0">
+                <button
+                  onClick={() => setActiveView('fuel-levels')}
+                  className={`w-full flex items-center gap-3 px-4 py-4 text-left font-medium transition-colors rounded-none ${
+                    activeView === 'fuel-levels' ? 'bg-blue-900 text-white' : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800'
+                  }`}
+                >
+                  <Gauge className="h-5 w-5" />
+                  VIEW FUEL LEVELS
+                </button>
 
-              <Button
-                onClick={() => setActiveView('schedule-deliveries')}
-                className={`w-full justify-start h-16 text-left transition-all duration-300 ${
-                  activeView === 'schedule-deliveries' 
-                    ? 'bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg shadow-red-500/25' 
-                    : 'bg-gradient-to-r from-gray-100 to-gray-200 text-gray-600 hover:from-red-50 hover:to-red-100 hover:text-red-700 dark:from-gray-800 dark:to-gray-700 dark:text-gray-300 dark:hover:from-red-950/30 dark:hover:to-red-900/30'
-                }`}
-              >
-                <Truck className="mr-3 h-6 w-6" />
-                <div>
-                  <div className="font-semibold">SCHEDULE DELIVERIES</div>
-                </div>
-              </Button>
+                <button
+                  onClick={() => setActiveView('schedule-deliveries')}
+                  className={`w-full flex items-center gap-3 px-4 py-4 text-left font-medium transition-colors rounded-none ${
+                    activeView === 'schedule-deliveries' ? 'bg-blue-900 text-white' : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800'
+                  }`}
+                >
+                  <Truck className="h-5 w-5" />
+                  SCHEDULE DELIVERIES
+                </button>
 
-              <Button
-                onClick={() => setActiveView('manage-account')}
-                className={`w-full justify-start h-16 text-left transition-all duration-300 ${
-                  activeView === 'manage-account' 
-                    ? 'bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg shadow-red-500/25' 
-                    : 'bg-gradient-to-r from-gray-100 to-gray-200 text-gray-600 hover:from-red-50 hover:to-red-100 hover:text-red-700 dark:from-gray-800 dark:to-gray-700 dark:text-gray-300 dark:hover:from-red-950/30 dark:hover:to-red-900/30'
-                }`}
-              >
-                <Users className="mr-3 h-6 w-6" />
-                <div>
-                  <div className="font-semibold">MANAGE YOUR ACCOUNT</div>
-                </div>
-              </Button>
+                <button
+                  onClick={() => setActiveView('manage-account')}
+                  className={`w-full flex items-center gap-3 px-4 py-4 text-left font-medium transition-colors rounded-none ${
+                    activeView === 'manage-account' ? 'bg-blue-900 text-white' : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800'
+                  }`}
+                >
+                  <Users className="h-5 w-5" />
+                  MANAGE YOUR ACCOUNT
+                </button>
 
-              <Button
-                onClick={() => setActiveView('make-payments')}
-                className={`w-full justify-start h-16 text-left transition-all duration-300 ${
-                  activeView === 'make-payments' 
-                    ? 'bg-gradient-to-r from-red-600 to-red-700 text-white shadow-lg shadow-red-500/25' 
-                    : 'bg-gradient-to-r from-gray-100 to-gray-200 text-gray-600 hover:from-red-50 hover:to-red-100 hover:text-red-700 dark:from-gray-800 dark:to-gray-700 dark:text-gray-300 dark:hover:from-red-950/30 dark:hover:to-red-900/30'
-                }`}
-              >
-                <CreditCard className="mr-3 h-6 w-6" />
-                <div>
-                  <div className="font-semibold">MAKE PAYMENTS</div>
-                </div>
-              </Button>
+                <button
+                  onClick={() => setActiveView('make-payments')}
+                  className={`w-full flex items-center gap-3 px-4 py-4 text-left font-medium transition-colors rounded-none ${
+                    'bg-red-600 text-white hover:bg-red-700'
+                  }`}
+                >
+                  <CreditCard className="h-5 w-5" />
+                  MAKE PAYMENTS
+                </button>
+              </nav>
             </div>
           </div>
         </div>

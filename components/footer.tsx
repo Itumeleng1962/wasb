@@ -1,6 +1,24 @@
-import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react"
 import Link from "next/link"
 import { Logo } from "@/components/logo"
+
+function WhatsAppIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M19.11 17.48c-.33-.16-1.95-.96-2.26-1.07-.31-.12-.54-.16-.77.16-.23.31-.89 1.07-1.09 1.29-.2.23-.4.25-.73.09-.33-.16-1.39-.51-2.64-1.63-.98-.87-1.64-1.94-1.83-2.27-.19-.33-.02-.51.14-.67.14-.14.33-.37.49-.56.16-.19.21-.33.31-.56.1-.23.05-.42-.02-.58-.07-.16-.77-1.85-1.06-2.54-.28-.68-.57-.59-.77-.6l-.66-.01c-.23 0-.6.09-.91.42-.31.33-1.2 1.17-1.2 2.86 0 1.69 1.23 3.33 1.41 3.56.18.23 2.42 3.7 5.91 5.19 3.49 1.49 3.49.99 4.12.96.63-.02 2.02-.82 2.31-1.61.28-.79.28-1.47.2-1.61-.09-.14-.3-.23-.63-.39z"/>
+      <path d="M27.94 23.85 26 22.98A11.56 11.56 0 0 0 28 16.5C28 9.6 22.4 4 15.5 4S3 9.6 3 16.5 8.6 29 15.5 29c2.03 0 3.93-.52 5.6-1.43l1.99 1.9c.3.29.76.37 1.15.21l3.14-1.29c.27-.11.49-.33.59-.61.1-.28.08-.58-.08-.83zM15.5 26.5C10 26.5 5.5 22 5.5 16.5S10 6.5 15.5 6.5 25.5 11 25.5 16.5 21 26.5 15.5 26.5z"/>
+    </svg>
+  )
+}
+
+function TwitterXIcon(props: React.SVGProps<SVGSVGElement>) {
+  // Brand-accurate X mark (Twitter) vector
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M18.244 2.25h3.478l-7.6 8.69 8.93 10.81h-6.99l-5.46-6.62-6.23 6.62H1.89l8.16-9.02L1.5 2.25h7.06l4.94 5.76 4.74-5.76z"/>
+    </svg>
+  )
+}
 
 export function Footer() {
   const footerLinks = {
@@ -33,10 +51,11 @@ export function Footer() {
 
   const socialLinks = [
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: TwitterXIcon, href: "#", label: "X (Twitter)" },
     { icon: Instagram, href: "#", label: "Instagram" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
     { icon: Youtube, href: "#", label: "YouTube" },
+    { icon: WhatsAppIcon, href: "#", label: "WhatsApp" },
   ]
 
   return (
