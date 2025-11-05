@@ -27,7 +27,7 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Phone",
-      details: "+27 11568 7912",
+      details: "+27 11 568 7912",
       description: "Call us for immediate assistance",
     },
     {

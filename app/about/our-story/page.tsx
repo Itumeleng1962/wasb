@@ -4,34 +4,28 @@ import { Calendar, MapPin, TrendingUp, Award } from "lucide-react"
 export default function OurStoryPage() {
   const timeline = [
     {
-      year: "1985",
+      year: "2022",
       title: "The Beginning",
       description:
         "WASB Gas Distributers was founded with a simple mission: provide reliable propane service to local communities.",
       icon: MapPin,
     },
     {
-      year: "1995",
+      year: "2023",
       title: "Regional Expansion",
       description: "Expanded operations to serve five states, establishing ourselves as a trusted regional provider.",
       icon: TrendingUp,
     },
     {
-      year: "2005",
+      year: "2024",
       title: "Innovation Leader",
       description: "Introduced automated tank monitoring and online customer portal, revolutionizing service delivery.",
       icon: Award,
     },
     {
-      year: "2015",
+      year: "2025",
       title: "Sustainability Focus",
       description: "Launched green initiatives and invested in eco-friendly fleet and renewable propane programs.",
-      icon: Award,
-    },
-    {
-      year: "2025",
-      title: "Industry Leader",
-      description: "Serving 50,000+ customers across 15 states with cutting-edge technology and unmatched service.",
       icon: Award,
     },
   ]
@@ -40,14 +34,14 @@ export default function OurStoryPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Our Story"
-        description="Four decades of dedication, innovation, and service excellence in the propane industry."
+        description="Dedication, innovation, and service excellence since 2022 in the propane industry."
       />
 
       {/* Introduction */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Building Trust Since 1985</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Building Trust Since 2022</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               What started as a small family business has grown into one of the most trusted names in propane energy.
               Our journey is marked by continuous innovation, unwavering commitment to safety, and dedication to serving

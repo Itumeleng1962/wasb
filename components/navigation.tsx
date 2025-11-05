@@ -11,6 +11,7 @@ export function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
   const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null)
+  const [mobileOpen, setMobileOpen] = useState<string | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -173,18 +174,29 @@ export function Navigation() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-6 space-y-4 slide-in-up glass-card rounded-2xl mt-3 px-6 luxury-border">
+          <div className="lg:hidden py-6 space-y-2 slide-in-up glass-card rounded-2xl mt-3 px-6 luxury-border max-h-[70vh] overflow-y-auto">
             {navLinks.map((link) => (
               <div key={link.name}>
-                <Link
-                  href={link.href}
-                  className="block py-3 text-foreground hover:text-gradient transition-all duration-300 font-medium hover:scale-105"
-                  onClick={() => !link.submenu && setIsMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </Link>
-                {link.submenu && (
-                  <div className="pl-4 space-y-1">
+                {!link.submenu ? (
+                  <Link
+                    href={link.href}
+                    className="block py-3 text-foreground hover:text-gradient transition-all duration-300 font-medium hover:scale-105"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                ) : (
+                  <button
+                    type="button"
+                    className="w-full flex items-center justify-between py-3 text-left font-medium text-foreground hover:text-gradient transition-all duration-300"
+                    onClick={() => setMobileOpen(mobileOpen === link.name ? null : link.name)}
+                  >
+                    <span className="hover:scale-105 transition-transform">{link.name}</span>
+                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileOpen === link.name ? "rotate-180" : ""}`} />
+                  </button>
+                )}
+                {link.submenu && mobileOpen === link.name && (
+                  <div className="pl-4 space-y-1 pb-2">
                     {link.submenu.map((sublink) => (
                       <Link
                         key={sublink.name}

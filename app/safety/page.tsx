@@ -91,9 +91,9 @@ export default function SafetyPage() {
                 <p className="text-white/90">If you smell gas, evacuate and call immediately</p>
               </div>
             </div>
-            <a href="tel:0782618059" className="flex-shrink-0">
+            <a href="tel:+27115687912" className="flex-shrink-0">
               <Button size="lg" variant="outline" className="bg-white text-red-600 hover:bg-white/90 border-0">
-                Call 0782618059
+                Call +27 11 568 7912
               </Button>
             </a>
           </div>

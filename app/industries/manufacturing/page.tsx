@@ -87,7 +87,7 @@ export default function ManufacturingPage() {
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
                 <img
-                  src="/manufacturing-facility-propane.jpg"
+                  src="/manufacture.png"
                   alt="Manufacturing facility"
                   className="rounded-lg w-full"
                 />
@@ -194,9 +194,9 @@ export default function ManufacturingPage() {
                   Schedule Consultation
                 </Button>
               </Link>
-              <a href="tel:888-337-7355">
+              <a href="tel:+27115687912">
                 <Button size="lg" variant="outline">
-                  Call 888-337-7355
+                  Call +27 11 568 7912
                 </Button>
               </a>
             </div>

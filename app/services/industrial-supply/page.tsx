@@ -91,7 +91,7 @@ export default function IndustrialSupplyPage() {
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
                 <img
-                  src="/industrial-propane-facility.jpg"
+                  src="/industrial.png"
                   alt="Industrial propane facility"
                   className="rounded-lg w-full"
                 />
@@ -216,7 +216,7 @@ export default function IndustrialSupplyPage() {
               </Link>
               <a href="tel:0782618059">
                 <Button size="lg" variant="outline">
-                  Call 0782618059
+                  Call +27 11 568 7912
                 </Button>
               </a>
             </div>

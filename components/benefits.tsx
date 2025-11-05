@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: Award,
     title: "Industry Leading Expertise",
-    description: "Over 35 years of experience delivering exceptional propane services with certified professionals.",
+    description: "Since 2022, delivering exceptional propane services with certified professionals.",
   },
   {
     icon: Banknote,
@@ -72,11 +72,11 @@ export function Benefits() {
         {/* Stats Section */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           <div className="text-center">
-            <div className="text-4xl sm:text-5xl font-bold text-gradient mb-2">35+</div>
+            <div className="text-4xl sm:text-5xl font-bold text-gradient mb-2">3+</div>
             <div className="text-sm text-muted-foreground">Years Experience</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl sm:text-5xl font-bold text-gradient mb-2">50K+</div>
+            <div className="text-4xl sm:text-5xl font-bold text-gradient mb-2">--</div>
             <div className="text-sm text-muted-foreground">Happy Customers</div>
           </div>
           <div className="text-center">

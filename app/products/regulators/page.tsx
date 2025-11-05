@@ -12,21 +12,21 @@ export default function RegulatorsPage() {
       name: "Pressure Regulators",
       description: "High-quality regulators for safe and consistent propane pressure control.",
       features: ["Multiple PSI options", "Weather-resistant", "Easy installation", "Long-lasting durability"],
-      image: "/propane-pressure-regulator.jpg",
+      image: "/regulator.png",
     },
     {
       icon: Wrench,
       name: "Hoses & Connectors",
       description: "Premium hoses and fittings for secure propane connections.",
       features: ["Various lengths", "Flexible design", "Leak-proof", "Industry certified"],
-      image: "/propane-hoses-connectors.jpg",
+      image: "/hoses.png",
     },
     {
       icon: Shield,
       name: "Safety Equipment",
       description: "Essential safety devices and monitoring equipment for propane systems.",
       features: ["Gas detectors", "Shut-off valves", "Pressure gauges", "Emergency kits"],
-      image: "/propane-safety-equipment.jpg",
+      image: "/safety.png",
     },
   ]
 

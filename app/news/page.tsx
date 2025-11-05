@@ -7,10 +7,10 @@ export default function NewsPage() {
   const featuredPost = {
     title: "WASB Gas Distributers Expands Service to Three New States",
     excerpt:
-      "We're excited to announce our expansion into Colorado, Wyoming, and Montana, bringing reliable propane service to thousands of new customers.",
+      "We're excited to announce our expansion across Gauteng, bringing reliable propane service to communities throughout the province.",
     date: "March 15, 2025",
     category: "Company News",
-    image: "/news-expansion-announcement.jpg",
+    image: "/gauteng.png",
     slug: "expansion-announcement-2025",
   }
 

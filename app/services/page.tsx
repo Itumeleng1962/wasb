@@ -62,8 +62,8 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Complete Propane Solutions</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              From delivery to maintenance, we provide end-to-end propane services backed by decades of experience and
-              unwavering commitment to customer satisfaction.
+              From delivery to maintenance, we provide end-to-end propane services backed by experience since 2022 and
+              an unwavering commitment to customer satisfaction.
             </p>
           </div>
 

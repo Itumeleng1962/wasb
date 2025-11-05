@@ -8,7 +8,7 @@ export default function CertificationPage() {
       icon: Shield,
       title: "NPGA Certified",
       description: "National Propane Gas Association certification for safety and operational excellence.",
-      year: "Since 1990",
+      year: "Since 2022",
     },
     {
       icon: Award,
@@ -26,7 +26,7 @@ export default function CertificationPage() {
       icon: CheckCircle,
       title: "DOT Certified",
       description: "Department of Transportation certification for safe propane transportation.",
-      year: "Since 1985",
+      year: "Since 2022",
     },
   ]
 

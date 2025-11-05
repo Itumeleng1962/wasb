@@ -121,7 +121,7 @@ export default function IndustriesPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="glass-card p-6 rounded-xl text-center">
-                <div className="text-4xl font-bold text-accent mb-2">35+</div>
+                <div className="text-4xl font-bold text-accent mb-2">3+</div>
                 <div className="text-sm text-muted-foreground">Years of Experience</div>
               </div>
               <div className="glass-card p-6 rounded-xl text-center">

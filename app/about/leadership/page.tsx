@@ -5,40 +5,16 @@ import { Button } from "@/components/ui/button"
 export default function LeadershipPage() {
   const leaders = [
     {
-      name: "Michael Anderson",
+      name: "Courage",
       role: "Chief Executive Officer",
-      bio: "With over 25 years in the energy sector, Michael leads WASB Gas Distributers with a vision for innovation and sustainable growth.",
-      image: "/professional-black-male-ceo-executive-headshot.jpg",
+      bio: "Courage leads WASB Gas Distributers with a focus on reliability, safety, and innovation since 2022.",
+      image: "/placeholder.svg",
     },
     {
-      name: "Sarah Chen",
+      name: "Noah",
       role: "Chief Operating Officer",
-      bio: "Sarah oversees daily operations and has been instrumental in implementing our advanced logistics systems.",
-      image: "/professional-black-woman-coo-executive-headshot.jpg",
-    },
-    {
-      name: "David Martinez",
-      role: "VP of Safety & Compliance",
-      bio: "David ensures our operations meet the highest safety standards and regulatory requirements across all locations.",
-      image: "/professional-black-male-vp-executive-headshot.jpg",
-    },
-    {
-      name: "Emily Thompson",
-      role: "VP of Customer Experience",
-      bio: "Emily leads our customer service initiatives, focusing on delivering exceptional experiences at every touchpoint.",
-      image: "/professional-black-woman-vp-executive-headshot.jpg",
-    },
-    {
-      name: "James Wilson",
-      role: "Chief Technology Officer",
-      bio: "James drives our digital transformation, implementing cutting-edge solutions for operations and customer service.",
-      image: "/professional-black-male-cto-executive-headshot.jpg",
-    },
-    {
-      name: "Lisa Rodriguez",
-      role: "VP of Sustainability",
-      bio: "Lisa leads our environmental initiatives and renewable propane programs, ensuring a greener future.",
-      image: "/professional-black-woman-sustainability-vp-headsho.jpg",
+      bio: "Noah oversees daily operations and service excellence, ensuring seamless delivery for our customers.",
+      image: "/placeholder.svg",
     },
   ]
 
@@ -54,12 +30,12 @@ export default function LeadershipPage() {
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Experienced Leadership</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our leadership team brings decades of combined experience in energy, operations, technology, and customer
-              service to deliver excellence every day.
+              Our leadership team brings focused expertise in energy, operations, technology, and customer service to
+              deliver excellence every day.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {leaders.map((leader, index) => (
               <div
                 key={index}

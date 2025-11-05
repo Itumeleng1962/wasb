@@ -8,9 +8,7 @@ import { Input } from "@/components/ui/input"
 import { MapPin, Search } from "lucide-react"
 import { useState } from "react"
 
-const locations = [
-  { province: "Gauteng", cities: "Bothma St & Deysel Rd, Wilgespruit 190-Iq, Roodepoort, 1724" },
-]
+const locations: { province: string; cities: string }[] = []
 
 export function Locations() {
   const [zipCode, setZipCode] = useState("")
@@ -147,7 +145,7 @@ export function Locations() {
           </Card>
         </div>
 
-        {/* Company Delivery Fleet */}
+        {/* Company Delivery Fleet
         <div className="max-w-5xl mx-auto mb-16">
           <h3 className="text-2xl font-bold text-center text-foreground mb-8">Our Delivery Fleet</h3>
           <div className="glass-card p-6 rounded-2xl overflow-hidden">
@@ -171,51 +169,9 @@ export function Locations() {
               Our branded fleet ensures professional and reliable delivery to your location
             </p>
           </div>
-        </div>
+        </div> */}
 
-        {/* Service Areas */}
-        <div className="max-w-5xl mx-auto">
-          <h3 className="text-2xl font-bold text-center text-foreground mb-8">Our Service Areas</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {locations.map((location, index) => (
-              <Card
-                key={index}
-                className="glass-card p-6 rounded-2xl hover:shadow-xl transition-all duration-300 border-0"
-              >
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-5 w-5 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground mb-2">{location.province}</h4>
-                    <p className="text-sm text-muted-foreground">{location.cities}</p>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-16 text-center">
-          <p className="text-muted-foreground mb-4">Don't see your area listed? We're always expanding!</p>
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="border-2 bg-transparent"
-            onClick={() => {
-              // Scroll to contact form or redirect to contact page
-              const contactSection = document.getElementById('contact')
-              if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' })
-              } else {
-                window.location.href = '/contact'
-              }
-            }}
-          >
-            Contact Us About Service
-          </Button>
-        </div>
+        {/* Service Areas removed per request */}
       </div>
     </section>
   )

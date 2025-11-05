@@ -44,9 +44,9 @@ export default function HospitalityPage() {
 
   const testimonial = {
     quote:
-      "WASB Gas Distributers has been our propane partner for over 10 years. Their reliable service and competitive pricing have been crucial to our restaurant's success. The dedicated account manager understands our needs and ensures we never run out during peak seasons.",
-    author: "Maria Rodriguez",
-    position: "Owner, Bella Vista Restaurant",
+      "WASB Gas Distributers has been our propane partner for over 5 years. Their reliable service and competitive pricing have been crucial to our restaurant's success. The dedicated account manager understands our needs and ensures we never run out during peak seasons.",
+    author: "John Doe",
+    position: "Owner, John's Restaurant",
   }
 
   return (
@@ -80,7 +80,7 @@ export default function HospitalityPage() {
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
                 <img
-                  src="/restaurant-commercial-kitchen-propane.jpg"
+                  src="/kitchen.png"
                   alt="Commercial kitchen"
                   className="rounded-lg w-full"
                 />
@@ -178,9 +178,9 @@ export default function HospitalityPage() {
                   Request Consultation
                 </Button>
               </Link>
-              <a href="tel:888-337-7355">
+              <a href="tel:+27115687912">
                 <Button size="lg" variant="outline">
-                  Call 888-337-7355
+                  Call +27 11 568 7912
                 </Button>
               </a>
             </div>

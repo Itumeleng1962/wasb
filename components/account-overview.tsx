@@ -290,7 +290,7 @@ export default function AccountOverview() {
                 <h3 className="text-lg font-semibold mb-4">Current Balance</h3>
                 <div className="bg-blue-900 text-white p-6 rounded-lg mb-6">
                   <p className="text-sm mb-2">Amount Due</p>
-                  <p className="text-4xl font-bold">$342.50</p>
+                  <p className="text-4xl font-bold">R342.50</p>
                   <p className="text-sm mt-2">Due Date: 12/15/2024</p>
                 </div>
 
@@ -316,7 +316,7 @@ export default function AccountOverview() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2">Payment Amount</label>
-                    <input type="text" placeholder="$342.50" className="w-full px-4 py-2 border rounded-lg" />
+                    <input type="text" placeholder="R342.50" className="w-full px-4 py-2 border rounded-lg" />
                   </div>
                   <Button className="w-full bg-red-600 hover:bg-red-700">
                     <DollarSign className="h-4 w-4 mr-2" />
@@ -333,21 +333,21 @@ export default function AccountOverview() {
                       <p className="font-medium">Payment</p>
                       <p className="text-sm text-gray-600">11/15/2024</p>
                     </div>
-                    <p className="font-semibold">$298.75</p>
+                    <p className="font-semibold">R298.75</p>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">
                     <div>
                       <p className="font-medium">Payment</p>
                       <p className="text-sm text-gray-600">10/15/2024</p>
                     </div>
-                    <p className="font-semibold">$315.20</p>
+                    <p className="font-semibold">R315.20</p>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">
                     <div>
                       <p className="font-medium">Payment</p>
                       <p className="text-sm text-gray-600">09/15/2024</p>
                     </div>
-                    <p className="font-semibold">$289.50</p>
+                    <p className="font-semibold">R289.50</p>
                   </div>
                 </div>
               </Card>
@@ -368,23 +368,23 @@ export default function AccountOverview() {
           {/* Header row with logo */}
           <div className="px-4 sm:px-6 py-3 border-b border-gray-200">
             <div className="flex items-center">
-              <div className="h-16 w-48  flex items-center justify-center">
-                <span className="text-sm text-gray-500"><img src="/logo-icon.png" alt="WASB Gas Logo" className="h-16 w-16" /></span>
+              <div className="h-16 flex items-center">
+                <Logo showText={false} size="md" />
               </div>
             </div>
           </div>
           {/* Dark blue nav bar */}
           <div className="bg-blue-900 text-white">
             <div className="flex">
-              <button className="px-6 py-4 bg-red-600 hover:bg-red-700 font-medium flex items-center gap-2">
+              <button className="px-6 py-4 bg-red-600 hover:bg-red-700 font-medium flex items-center gap-2" onClick={() => handleMenuClick("manage-account")}>
                 Accounts
                 <ChevronDown className="h-4 w-4" />
               </button>
-              <button className="px-6 py-4 hover:bg-blue-800 font-medium flex items-center gap-2">
+              <button className="px-6 py-4 hover:bg-blue-800 font-medium flex items-center gap-2" onClick={() => handleMenuClick("make-payments")}>
                 Make A Payment
                 <ChevronDown className="h-4 w-4" />
               </button>
-              <button className="px-6 py-4 hover:bg-blue-800 font-medium flex items-center gap-2">
+              <button className="px-6 py-4 hover:bg-blue-800 font-medium flex items-center gap-2" onClick={() => handleMenuClick("schedule-deliveries")}>
                 Request A Delivery
                 <ChevronDown className="h-4 w-4" />
               </button>

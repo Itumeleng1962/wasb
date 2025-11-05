@@ -31,8 +31,8 @@ export default function AboutPage() {
   ]
 
   const stats = [
-    { value: "35+", label: "Years of Experience" },
-    { value: "50K+", label: "Happy Customers" },
+    { value: "3+", label: "Years of Experience" },
+    { value: "--", label: "Happy Customers" },
     { value: "200+", label: "Team Members" },
     { value: "15", label: "States Served" },
   ]
@@ -41,7 +41,7 @@ export default function AboutPage() {
     <div className="min-h-screen">
       <PageHeader
         title="About WASB Gas Distributers"
-        description="Leading the propane industry with reliable service, innovative solutions, and unwavering commitment to safety since 1985."
+        description="Leading the propane industry with reliable service, innovative solutions, and unwavering commitment to safety since 2022."
       />
 
       {/* Introduction Section */}
@@ -51,8 +51,8 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Your Trusted Energy Partner</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                For over three decades, WASB Gas Distributers has been at the forefront of propane delivery and energy
-                solutions. We've built our reputation on reliability, safety, and exceptional customer service.
+                Since 2022, WASB Gas Distributers has been at the forefront of propane delivery and energy solutions.
+                We've built our reputation on reliability, safety, and exceptional customer service.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 From residential homes to large industrial facilities, we provide comprehensive propane solutions

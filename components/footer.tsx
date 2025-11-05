@@ -50,12 +50,12 @@ export function Footer() {
   }
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: TwitterXIcon, href: "#", label: "X (Twitter)" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Youtube, href: "#", label: "YouTube" },
-    { icon: WhatsAppIcon, href: "#", label: "WhatsApp" },
+    { icon: Facebook, href: "https://www.facebook.com/", label: "Facebook", hoverClasses: "hover:bg-[#1877F2] hover:text-white" },
+    { icon: TwitterXIcon, href: "https://twitter.com/", label: "X (Twitter)", hoverClasses: "hover:bg-black hover:text-white" },
+    { icon: Instagram, href: "https://www.instagram.com/", label: "Instagram", hoverClasses: "hover:bg-[#E4405F] hover:text-white" },
+    { icon: Linkedin, href: "https://www.linkedin.com/", label: "LinkedIn", hoverClasses: "hover:bg-[#0A66C2] hover:text-white" },
+    { icon: Youtube, href: "https://www.youtube.com/", label: "YouTube", hoverClasses: "hover:bg-[#FF0000] hover:text-white" },
+    { icon: WhatsAppIcon, href: "https://wa.me/27115687912", label: "WhatsApp", hoverClasses: "hover:bg-[#25D366] hover:text-white" },
   ]
 
   return (
@@ -68,16 +68,13 @@ export function Footer() {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16 stagger-animation">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16 mb-16 stagger-animation">
           {/* Brand Column */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 lg:pr-8">
             <div className="mb-6">
-              <Logo size="lg" />
+              <Logo size="xl" variant="dark" showText={false} />
             </div>
-            <p className="text-white/80 mb-8 text-pretty leading-relaxed">
-              Your trusted partner for reliable propane delivery and energy services since 1985.
-            </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mt-4 flex-nowrap">
               {socialLinks.map((social) => {
                 const Icon = social.icon
                 return (
@@ -85,7 +82,9 @@ export function Footer() {
                     key={social.label}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-12 h-12 rounded-full bg-white/20 hover:bg-white hover:text-primary flex items-center justify-center transition-all duration-300 premium-hover"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-12 h-12 rounded-full bg-white/20 flex items-center justify-center transition-all duration-300 premium-hover ${social.hoverClasses}`}
                   >
                     <Icon className="h-6 w-6" />
                   </a>
@@ -154,7 +153,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-12 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-white/60 text-base">© {new Date().getFullYear()} All rights reserved.</p>
+            <p className="text-white/60 text-base">© 2022 All rights reserved.</p>
           </div>
         </div>
       </div>

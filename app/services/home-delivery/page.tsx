@@ -96,8 +96,8 @@ export default function HomeDeliveryPage() {
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
                 <img
-                  src="/propane-delivery-truck-residential.jpg?key=mngip"
-                  alt="Propane delivery truck"
+                  src="/home-delivery.png"
+                  alt="Home delivery"
                   className="rounded-lg w-full"
                 />
               </div>
@@ -197,9 +197,9 @@ export default function HomeDeliveryPage() {
                   Get Started
                 </Button>
               </Link>
-              <a href="tel:0782618059">
+              <a href="tel:+27115687912">
                 <Button size="lg" variant="outline">
-                  Call 0782618059
+                  Call +27 11 568 7912
                 </Button>
               </a>
             </div>

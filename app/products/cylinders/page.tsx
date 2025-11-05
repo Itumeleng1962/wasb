@@ -9,31 +9,31 @@ import Link from "next/link"
 export default function CylindersPage() {
   const cylinderSizes = [
     {
-      name: "20 lb Cylinder",
-      capacity: "20 lbs / 4.7 gallons",
+      name: "9.1 kg Cylinder",
+      capacity: "9.1 kg / 17.8 liters",
       uses: ["Grills", "Patio heaters", "Small appliances"],
-      price: "From R49.99",
+      price: "R",
       popular: true,
     },
     {
-      name: "30 lb Cylinder",
-      capacity: "30 lbs / 7 gallons",
+      name: "13.6 kg Cylinder",
+      capacity: "13.6 kg / 26.5 liters",
       uses: ["RVs", "Forklifts", "Commercial cooking"],
-      price: "From R79.99",
+      price: "R",
       popular: false,
     },
     {
-      name: "40 lb Cylinder",
-      capacity: "40 lbs / 9.4 gallons",
+      name: "18.1 kg Cylinder",
+      capacity: "18.1 kg / 35.6 liters",
       uses: ["Industrial equipment", "Large appliances", "Construction"],
-      price: "From R99.99",
+      price: "R",
       popular: false,
     },
     {
-      name: "100 lb Cylinder",
-      capacity: "100 lbs / 23.6 gallons",
+      name: "45.4 kg Cylinder",
+      capacity: "45.4 kg / 89.3 liters",
       uses: ["Commercial operations", "Temporary heating", "Events"],
-      price: "From R199.99",
+      price: "R",
       popular: false,
     },
   ]
@@ -122,11 +122,9 @@ export default function CylindersPage() {
                     ))}
                   </div>
                   <p className="text-2xl font-bold mb-4">{cylinder.price}</p>
-                  <Link href={`/products/cylinders/${cylinder.name.toLowerCase().replace(/\s+/g, "-")}`}>
-                    <Button variant="outline" className="w-full bg-transparent">
-                      View Details
-                    </Button>
-                  </Link>
+                  <Button variant="outline" className="w-full bg-transparent" disabled>
+                    View Details
+                  </Button>
                 </div>
               ))}
             </div>

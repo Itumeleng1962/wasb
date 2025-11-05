@@ -1,3 +1,5 @@
+"use client"
+import { useState } from "react"
 import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Users, TrendingUp, Heart, Award, MapPin, Briefcase } from "lucide-react"
@@ -29,47 +31,54 @@ export default function CareersPage() {
   const openings = [
     {
       title: "Propane Delivery Driver",
-      location: "Multiple Locations",
+      location: "Gauteng",
       type: "Full-time",
       department: "Operations",
       description: "Deliver propane to residential and commercial customers with excellent customer service.",
     },
     {
       title: "Service Technician",
-      location: "Denver, CO",
+      location: "Gauteng",
       type: "Full-time",
       department: "Technical Services",
       description: "Install, maintain, and repair propane systems and equipment for customers.",
     },
     {
       title: "Customer Service Representative",
-      location: "Remote",
+      location: "Remote (Gauteng)",
       type: "Full-time",
       department: "Customer Support",
       description: "Provide exceptional support to customers via phone, email, and chat.",
     },
     {
       title: "Account Manager",
-      location: "Chicago, IL",
+      location: "Gauteng",
       type: "Full-time",
       department: "Sales",
       description: "Manage commercial accounts and develop new business relationships.",
     },
     {
       title: "Safety Coordinator",
-      location: "Houston, TX",
+      location: "Gauteng",
       type: "Full-time",
       department: "Safety & Compliance",
       description: "Oversee safety programs and ensure compliance with industry regulations.",
     },
     {
       title: "Operations Manager",
-      location: "Phoenix, AZ",
+      location: "Gauteng",
       type: "Full-time",
       department: "Operations",
       description: "Lead daily operations and manage team performance at regional facility.",
     },
   ]
+
+  const [applyingJob, setApplyingJob] = useState<null | { title: string }>(null)
+  const [form, setForm] = useState({ name: "", email: "", phone: "", resume: "", linkedin: "" })
+  const [applyMethod, setApplyMethod] = useState<"linkedin" | "upload">("linkedin")
+  const handleApply = (title: string) => {
+    setApplyingJob({ title })
+  }
 
   const values = [
     "Safety is our top priority in everything we do",
@@ -94,7 +103,7 @@ export default function CareersPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Work at WASB Gas Distributers?</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                For over 35 years, WASB Gas Distributers has been more than just a propane company—we're a family. We invest in
+                For over 3 years, WASB Gas Distributers has been more than just a propane company—we're a family. We invest in
                 our people, provide opportunities for growth, and create an environment where everyone can thrive.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -108,7 +117,7 @@ export default function CareersPage() {
             </div>
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
-                <img src="/diverse-team-of-energy-company-employees-smiling.jpg" alt="WASB Gas Distributers team" className="rounded-lg w-full" />
+                <img src="/team.png" alt="WASB Gas Distributers team" className="rounded-lg w-full" />
               </div>
             </div>
           </div>
@@ -192,7 +201,7 @@ export default function CareersPage() {
                     </div>
                     <p className="text-sm text-muted-foreground leading-relaxed">{job.description}</p>
                   </div>
-                  <Button variant="outline" className="bg-transparent flex-shrink-0">
+                  <Button variant="outline" className="bg-transparent flex-shrink-0" onClick={() => handleApply(job.title)}>
                     Apply Now
                   </Button>
                 </div>
@@ -211,12 +220,113 @@ export default function CareersPage() {
               We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future
               opportunities.
             </p>
-            <Button size="lg" className="gradient-accent text-white">
+            <Button size="lg" className="gradient-accent text-white" onClick={() => handleApply("General Application") }>
               Submit General Application
             </Button>
           </div>
         </div>
       </section>
+
+      {/* Apply Form Modal */}
+      {applyingJob && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl w-full max-w-lg p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xl font-bold">Apply for {applyingJob.title}</h3>
+              <button onClick={() => setApplyingJob(null)} className="text-sm text-muted-foreground hover:underline">Close</button>
+            </div>
+            <form
+              className="space-y-4"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              encType="multipart/form-data"
+            >
+              {/* Web3Forms config */}
+              <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "YOUR_WEB3FORMS_ACCESS_KEY"} />
+              <input type="hidden" name="subject" value={`New Application: ${applyingJob.title}`} />
+              <input type="hidden" name="from_name" value="WASB Careers" />
+              <input type="hidden" name="redirect" value="/careers?applied=1" />
+              <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
+              <input type="hidden" name="job_title" value={applyingJob.title} />
+
+              <div>
+                <label className="block text-sm font-medium mb-1">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  className="w-full px-4 py-2 border rounded-lg bg-background"
+                  value={form.name}
+                  onChange={(e) => setForm({ ...form, name: e.target.value })}
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-1">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  className="w-full px-4 py-2 border rounded-lg bg-background"
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-1">Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  className="w-full px-4 py-2 border rounded-lg bg-background"
+                  value={form.phone}
+                  onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                />
+              </div>
+              {/* Apply method selector */}
+              <div className="flex items-center gap-4 pt-2">
+                <label className="flex items-center gap-2 text-sm cursor-pointer">
+                  <input type="radio" name="apply_method" value="linkedin" checked={applyMethod === "linkedin"} onChange={() => setApplyMethod("linkedin")} />
+                  Apply with LinkedIn
+                </label>
+                <label className="flex items-center gap-2 text-sm cursor-pointer">
+                  <input type="radio" name="apply_method" value="upload" checked={applyMethod === "upload"} onChange={() => setApplyMethod("upload")} />
+                  Upload a Resume
+                </label>
+              </div>
+
+              {applyMethod === "linkedin" ? (
+                <div>
+                  <label className="block text-sm font-medium mb-1">LinkedIn Profile URL</label>
+                  <input
+                    type="url"
+                    name="linkedin"
+                    className="w-full px-4 py-2 border rounded-lg bg-background"
+                    value={form.linkedin}
+                    onChange={(e) => setForm({ ...form, linkedin: e.target.value })}
+                    placeholder="https://www.linkedin.com/in/your-profile"
+                    required
+                  />
+                </div>
+              ) : (
+                <div>
+                  <label className="block text-sm font-medium mb-1">Resume File (PDF, DOC, DOCX)</label>
+                  <input
+                    type="file"
+                    name="resume_file"
+                    className="w-full px-4 py-2 border rounded-lg bg-background"
+                    accept=".pdf,.doc,.docx"
+                    required
+                  />
+                </div>
+              )}
+              <div className="flex justify-end gap-3 pt-2">
+                <Button variant="outline" className="bg-transparent" type="button" onClick={() => setApplyingJob(null)}>Cancel</Button>
+                <Button type="submit" className="gradient-accent text-white">Submit Application</Button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
     </div>
   )
 }

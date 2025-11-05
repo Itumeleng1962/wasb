@@ -6,26 +6,26 @@ import Link from "next/link"
 export default function BulkGasPage() {
   const tankSizes = [
     {
-      name: "120 Gallon",
-      capacity: "120 gallons",
+      name: "454 L",
+      capacity: "454 liters",
       ideal: "Small homes, cabins",
       dimensions: '54" L x 30" D',
     },
     {
-      name: "250 Gallon",
-      capacity: "250 gallons",
+      name: "946 L",
+      capacity: "946 liters",
       ideal: "Average homes",
       dimensions: '92" L x 30" D',
     },
     {
-      name: "500 Gallon",
-      capacity: "500 gallons",
+      name: "1893 L",
+      capacity: "1893 liters",
       ideal: "Large homes, small businesses",
       dimensions: '120" L x 37" D',
     },
     {
-      name: "1000 Gallon",
-      capacity: "1000 gallons",
+      name: "3785 L",
+      capacity: "3785 liters",
       ideal: "Commercial, industrial",
       dimensions: '192" L x 41" D',
     },
@@ -95,7 +95,7 @@ export default function BulkGasPage() {
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
                 <img
-                  src="/bulk-propane-tank-installation.jpg?key=8e7t0"
+                  src="/bulk-tank.png"
                   alt="Bulk propane tank"
                   className="rounded-lg w-full"
                 />
@@ -177,9 +177,9 @@ export default function BulkGasPage() {
                   Request Quote
                 </Button>
               </Link>
-              <a href="tel:0782618059">
+              <a href="tel:+27115687912">
                 <Button size="lg" variant="outline">
-                  Call 0782618059
+                  Call +27 11 568 7912
                 </Button>
               </a>
             </div>

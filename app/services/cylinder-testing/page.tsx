@@ -98,7 +98,7 @@ export default function CylinderTestingPage() {
             </div>
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
-                <img src="/propane-cylinder-testing.jpg" alt="Cylinder testing" className="rounded-lg w-full" />
+                <img src="/cylinder.png" alt="Cylinder testing" className="rounded-lg w-full" />
               </div>
             </div>
           </div>
@@ -215,9 +215,9 @@ export default function CylinderTestingPage() {
                   Schedule Service
                 </Button>
               </Link>
-              <a href="tel:0782618059">
+              <a href="tel:+27115687912">
                 <Button size="lg" variant="outline">
-                  Call 0782618059
+                  Call +27 11 568 7912
                 </Button>
               </a>
             </div>
