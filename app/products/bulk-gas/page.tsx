@@ -36,7 +36,7 @@ export default function BulkGasPage() {
       icon: Home,
       title: "Residential",
       description: "Home heating, water heating, cooking, and more",
-      features: ["Automatic delivery", "Budget billing", "Tank monitoring", "24/7 support"],
+      features: ["Automatic delivery", "Budget billing", "Tank monitoring", "Dedicated support team"],
     },
     {
       icon: Building2,
@@ -57,15 +57,15 @@ export default function BulkGasPage() {
     "Automatic delivery scheduling",
     "Real-time tank level monitoring",
     "Competitive pricing and volume discounts",
-    "24/7 emergency service",
+    "Emergency support line",
     "Flexible payment options",
   ]
 
   return (
     <div className="min-h-screen">
       <PageHeader
-        title="Bulk Propane Gas"
-        description="Large-scale propane solutions for residential, commercial, and industrial applications."
+        title="Bulk LPG Gas"
+        description="Large-scale LPG Gas solutions for residential, commercial, and industrial applications."
       />
 
       {/* Introduction */}
@@ -73,9 +73,9 @@ export default function BulkGasPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Reliable Bulk Propane Delivery</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Reliable Bulk LPG Gas Delivery</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our bulk propane service provides a consistent, cost-effective energy solution for homes and businesses
+                Our bulk LPG gas service provides a consistent, cost-effective energy solution for homes and businesses
                 of all sizes. We handle everything from tank installation to automatic delivery.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -95,9 +95,9 @@ export default function BulkGasPage() {
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
                 <img
-                  src="/bulk-tank.png"
-                  alt="Bulk propane tank"
-                  className="rounded-lg w-full"
+                  src="/tank2.jpeg"
+                  alt="22m³ bulk LPG gas storage tank at WASB depot"
+                  className="rounded-lg w-full object-cover"
                 />
               </div>
             </div>
@@ -167,10 +167,10 @@ export default function BulkGasPage() {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card p-12 rounded-2xl text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Switch to Bulk Propane?</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Get a free consultation and quote for your bulk propane needs today.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Switch to Bulk LPG Gas?</h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Get a free consultation and quote for your bulk LPG gas needs today.
+              </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">
                 <Button size="lg" className="gradient-accent text-white">

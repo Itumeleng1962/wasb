@@ -8,7 +8,7 @@ export default function HospitalityPage() {
     {
       icon: Flame,
       title: "Commercial Kitchens",
-      description: "Power ranges, ovens, grills, and fryers with reliable, cost-effective propane.",
+      description: "Power ranges, ovens, grills, and fryers with reliable, cost-effective LPG gas.",
       benefits: ["Precise temperature control", "Lower operating costs", "Faster cooking times", "Chef preferred"],
     },
     {
@@ -34,7 +34,7 @@ export default function HospitalityPage() {
   const benefits = [
     "Priority delivery scheduling",
     "Volume-based pricing",
-    "24/7 emergency service",
+    "Emergency service hotline",
     "Dedicated account manager",
     "Equipment installation",
     "Preventive maintenance",
@@ -44,7 +44,7 @@ export default function HospitalityPage() {
 
   const testimonial = {
     quote:
-      "WASB Gas Distributers has been our propane partner for over 5 years. Their reliable service and competitive pricing have been crucial to our restaurant's success. The dedicated account manager understands our needs and ensures we never run out during peak seasons.",
+      "WASB Gas Distributers has been our LPG gas partner for over 5 years. Their reliable service and competitive pricing have been crucial to our restaurant's success. The dedicated account manager understands our needs and ensures we never run out during peak seasons.",
     author: "John Doe",
     position: "Owner, John's Restaurant",
   }
@@ -53,7 +53,7 @@ export default function HospitalityPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Hospitality Solutions"
-        description="Reliable propane services for restaurants, hotels, and food service operations."
+        description="Reliable LPG gas services for restaurants, hotels, and food service operations."
       />
 
       {/* Introduction */}
@@ -63,7 +63,7 @@ export default function HospitalityPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Powering Exceptional Guest Experiences</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                In the hospitality industry, reliability is everything. Our propane solutions ensure your operations run
+                In the hospitality industry, reliability is everything. Our LPG gas solutions ensure your operations run
                 smoothly, from commercial kitchens to guest amenities, so you can focus on delivering outstanding
                 service.
               </p>
@@ -92,7 +92,7 @@ export default function HospitalityPage() {
           <div>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Hospitality Applications</h2>
-              <p className="text-lg text-muted-foreground">Comprehensive propane solutions for your facility</p>
+              <p className="text-lg text-muted-foreground">Comprehensive LPG gas solutions for your facility</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">

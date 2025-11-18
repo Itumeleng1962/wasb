@@ -10,21 +10,21 @@ export default function RegulatorsPage() {
     {
       icon: Gauge,
       name: "Pressure Regulators",
-      description: "High-quality regulators for safe and consistent propane pressure control.",
+      description: "High-quality regulators for safe and consistent LPG gas pressure control.",
       features: ["Multiple PSI options", "Weather-resistant", "Easy installation", "Long-lasting durability"],
       image: "/regulator.png",
     },
     {
       icon: Wrench,
       name: "Hoses & Connectors",
-      description: "Premium hoses and fittings for secure propane connections.",
+      description: "Premium hoses and fittings for secure LPG gas connections.",
       features: ["Various lengths", "Flexible design", "Leak-proof", "Industry certified"],
       image: "/hoses.png",
     },
     {
       icon: Shield,
       name: "Safety Equipment",
-      description: "Essential safety devices and monitoring equipment for propane systems.",
+      description: "Essential safety devices and monitoring equipment for LPG gas systems.",
       features: ["Gas detectors", "Shut-off valves", "Pressure gauges", "Emergency kits"],
       image: "/safety.png",
     },
@@ -45,7 +45,7 @@ export default function RegulatorsPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Regulators & Accessories"
-        description="Premium equipment and accessories for safe, efficient propane system operation."
+        description="Premium equipment and accessories for safe, efficient LPG gas system operation."
       />
 
       {/* Introduction */}
@@ -55,7 +55,7 @@ export default function RegulatorsPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Quality Equipment You Can Trust</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               We offer a comprehensive selection of regulators, hoses, fittings, and safety equipment to ensure your
-              propane system operates safely and efficiently.
+              LPG gas system operates safely and efficiently.
             </p>
           </div>
 
@@ -116,7 +116,7 @@ export default function RegulatorsPage() {
           <div>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Additional Accessories</h2>
-              <p className="text-lg text-muted-foreground">Everything you need for complete propane system setup</p>
+              <p className="text-lg text-muted-foreground">Everything you need for complete LPG gas system setup</p>
             </div>
 
             <div className="glass-card p-8 rounded-2xl">

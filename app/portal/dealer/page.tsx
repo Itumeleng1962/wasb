@@ -194,7 +194,7 @@ export default function DealerPortalPage() {
           <div className="glass-card p-12 rounded-2xl text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Interested in Becoming a Dealer?</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Join our network of successful propane dealers and grow your business with WASB Gas Distributers.
+              Join our network of successful LPG gas dealers and grow your business with WASB Gas Distributers.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">

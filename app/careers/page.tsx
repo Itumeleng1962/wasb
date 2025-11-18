@@ -30,18 +30,18 @@ export default function CareersPage() {
 
   const openings = [
     {
-      title: "Propane Delivery Driver",
+      title: "LPG Gas Delivery Driver",
       location: "Gauteng",
       type: "Full-time",
       department: "Operations",
-      description: "Deliver propane to residential and commercial customers with excellent customer service.",
+      description: "Deliver LPG gas to residential and commercial customers with excellent customer service.",
     },
     {
       title: "Service Technician",
       location: "Gauteng",
       type: "Full-time",
       department: "Technical Services",
-      description: "Install, maintain, and repair propane systems and equipment for customers.",
+      description: "Install, maintain, and repair LPG gas systems and equipment for customers.",
     },
     {
       title: "Customer Service Representative",
@@ -93,7 +93,7 @@ export default function CareersPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Join Our Team"
-        description="Build your career with a leader in the propane industry. Discover opportunities to grow and make a difference."
+        description="Build your career with a leader in the LPG gas industry. Discover opportunities to grow and make a difference."
       />
 
       {/* Introduction */}
@@ -103,7 +103,7 @@ export default function CareersPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Work at WASB Gas Distributers?</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                For over 3 years, WASB Gas Distributers has been more than just a propane company—we're a family. We invest in
+                For over 3 years, WASB Gas Distributers has been more than just an LPG gas company—we're a family. We invest in
                 our people, provide opportunities for growth, and create an environment where everyone can thrive.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

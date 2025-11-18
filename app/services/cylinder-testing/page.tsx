@@ -9,7 +9,7 @@ export default function CylinderTestingPage() {
       icon: FileCheck,
       title: "DOT Compliance Testing",
       description: "Mandatory testing to meet Department of Transportation regulations and safety standards.",
-      interval: "Every 12 years",
+      interval: "Every 5 years",
     },
     {
       icon: Shield,
@@ -27,7 +27,7 @@ export default function CylinderTestingPage() {
       icon: Clock,
       title: "Recertification",
       description: "Complete cylinder recertification including hydrostatic testing and documentation.",
-      interval: "Every 12 years",
+      interval: "Every 5 years",
     },
   ]
 
@@ -80,7 +80,7 @@ export default function CylinderTestingPage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Safety Through Certified Testing</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Regular cylinder testing and maintenance is not just a legal requirement—it's essential for safety. Our
-                DOT-certified technicians ensure your propane cylinders meet all safety standards and regulations.
+                DOT-certified technicians ensure your LPG gas cylinders meet all safety standards and regulations.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 mb-8">
                 {benefits.map((benefit, index) => (
@@ -173,9 +173,9 @@ export default function CylinderTestingPage() {
 
               <div className="space-y-6">
                 <div className="border-l-4 border-accent pl-6">
-                  <h3 className="font-bold text-lg mb-2">12-Year Recertification</h3>
+                  <h3 className="font-bold text-lg mb-2">5-Year Recertification</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    All propane cylinders must undergo hydrostatic testing every 12 years from the date of manufacture
+                    All LPG gas cylinders must undergo hydrostatic testing every 5 years from the date of manufacture
                     or last recertification. This is a DOT requirement for continued legal use.
                   </p>
                 </div>

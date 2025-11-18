@@ -43,6 +43,12 @@ export default function ContactPage() {
       description: "Contact Noah directly",
     },
     {
+      icon: MessageSquare,
+      title: "WhatsApp (Zed)",
+      details: "WhatsApp 078 058 4824 / 067 783 9400",
+      description: "Zed – Depot Manager",
+    },
+    {
       icon: Mail,
       title: "Email",
       details: "admin@wasbdistributers.co.za",

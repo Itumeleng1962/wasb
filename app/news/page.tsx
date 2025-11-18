@@ -7,7 +7,7 @@ export default function NewsPage() {
   const featuredPost = {
     title: "WASB Gas Distributers Expands Service to Three New States",
     excerpt:
-      "We're excited to announce our expansion across Gauteng, bringing reliable propane service to communities throughout the province.",
+      "We're excited to announce our expansion across Gauteng, bringing reliable LPG gas service to communities throughout the province.",
     date: "March 15, 2025",
     category: "Company News",
     image: "/gauteng.png",
@@ -16,9 +16,9 @@ export default function NewsPage() {
 
   const posts = [
     {
-      title: "Understanding Propane Pricing: What Affects Your Costs",
+      title: "Understanding LPG Gas Pricing: What Affects Your Costs",
       excerpt:
-        "Learn about the factors that influence propane prices and how to manage your energy expenses effectively.",
+        "Learn about the factors that influence LPG gas prices and how to manage your energy expenses effectively.",
       date: "March 10, 2025",
       category: "Industry Insights",
       image: "/news-propane-pricing.jpg",
@@ -26,7 +26,7 @@ export default function NewsPage() {
     },
     {
       title: "5 Ways to Improve Your Home's Energy Efficiency",
-      excerpt: "Discover practical tips to reduce propane consumption and lower your energy bills this season.",
+      excerpt: "Discover practical tips to reduce LPG gas consumption and lower your energy bills this season.",
       date: "March 5, 2025",
       category: "Tips & Advice",
       image: "/news-energy-efficiency.jpg",
@@ -34,23 +34,23 @@ export default function NewsPage() {
     },
     {
       title: "WASB Gas Distributers Receives Safety Excellence Award",
-      excerpt: "Recognized by the National Propane Gas Association for outstanding safety record and practices.",
+      excerpt: "Recognized by the National LPG Gas Association for outstanding safety record and practices.",
       date: "February 28, 2025",
       category: "Company News",
       image: "/news-safety-award.jpg",
       slug: "safety-excellence-award",
     },
     {
-      title: "Propane vs. Electric: A Cost Comparison",
-      excerpt: "Compare the costs and benefits of propane versus electric heating for your home or business.",
+      title: "LPG Gas vs. Electric: A Cost Comparison",
+      excerpt: "Compare the costs and benefits of LPG gas versus electric heating for your home or business.",
       date: "February 20, 2025",
       category: "Industry Insights",
       image: "/news-cost-comparison.jpg",
       slug: "propane-vs-electric",
     },
     {
-      title: "Winter Preparedness: Ensuring Your Propane Supply",
-      excerpt: "Essential steps to prepare your propane system for winter weather and avoid supply interruptions.",
+      title: "Winter Preparedness: Ensuring Your LPG Gas Supply",
+      excerpt: "Essential steps to prepare your LPG gas system for winter weather and avoid supply interruptions.",
       date: "February 15, 2025",
       category: "Tips & Advice",
       image: "/news-winter-prep.jpg",

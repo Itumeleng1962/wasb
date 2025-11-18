@@ -8,7 +8,7 @@ export default function IndustrialSupplyPage() {
     {
       icon: Factory,
       title: "Manufacturing",
-      description: "Reliable propane supply for production facilities, forklifts, and industrial processes.",
+      description: "Reliable LPG gas supply for production facilities, forklifts, and industrial processes.",
     },
     {
       icon: Zap,
@@ -28,7 +28,7 @@ export default function IndustrialSupplyPage() {
   ]
 
   const services = [
-    "Bulk propane delivery",
+    "Bulk LPG gas delivery",
     "On-site storage solutions",
     "Emergency delivery service",
     "Volume-based pricing",
@@ -57,7 +57,7 @@ export default function IndustrialSupplyPage() {
     },
     {
       title: "Expert Consultation",
-      description: "Technical expertise to optimize your propane usage and reduce operational costs.",
+      description: "Technical expertise to optimize your LPG gas usage and reduce operational costs.",
     },
   ]
 
@@ -65,7 +65,7 @@ export default function IndustrialSupplyPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Industrial Supply"
-        description="Comprehensive propane solutions for commercial and industrial operations of any scale."
+        description="Comprehensive LPG gas solutions for commercial and industrial operations of any scale."
       />
 
       {/* Introduction */}
@@ -76,7 +76,7 @@ export default function IndustrialSupplyPage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Power Your Business with WASB Gas Distributers</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 We understand that your business depends on reliable energy. Our industrial supply service provides
-                consistent, cost-effective propane solutions tailored to your operational needs.
+                consistent, cost-effective LPG gas solutions tailored to your operational needs.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 From small businesses to large industrial facilities, we have the expertise and infrastructure to
@@ -92,7 +92,7 @@ export default function IndustrialSupplyPage() {
               <div className="glass-card p-6 rounded-2xl">
                 <img
                   src="/industrial.png"
-                  alt="Industrial propane facility"
+                  alt="Industrial LPG gas facility"
                   className="rounded-lg w-full"
                 />
               </div>
@@ -190,7 +190,7 @@ export default function IndustrialSupplyPage() {
               </div>
 
               <p className="text-muted-foreground leading-relaxed text-center">
-                "WASB Gas Distributers transformed our propane supply chain with their industrial solutions. The dedicated account
+                "WASB Gas Distributers transformed our LPG gas supply chain with their industrial solutions. The dedicated account
                 manager and optimized delivery schedule have significantly reduced our operational costs while ensuring
                 we never experience supply interruptions."
               </p>
@@ -204,9 +204,9 @@ export default function IndustrialSupplyPage() {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card p-12 rounded-2xl text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Optimize Your Propane Supply?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Optimize Your LPG Gas Supply?</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Let's discuss how we can support your business with reliable, cost-effective propane solutions.
+              Let's discuss how we can support your business with reliable, cost-effective LPG gas solutions.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">

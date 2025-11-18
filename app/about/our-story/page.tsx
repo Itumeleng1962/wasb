@@ -7,7 +7,7 @@ export default function OurStoryPage() {
       year: "2022",
       title: "The Beginning",
       description:
-        "WASB Gas Distributers was founded with a simple mission: provide reliable propane service to local communities.",
+        "WASB Gas Distributers was founded with a simple mission: provide reliable LPG gas service to local communities.",
       icon: MapPin,
     },
     {
@@ -25,7 +25,7 @@ export default function OurStoryPage() {
     {
       year: "2025",
       title: "Sustainability Focus",
-      description: "Launched green initiatives and invested in eco-friendly fleet and renewable propane programs.",
+      description: "Launched green initiatives and invested in eco-friendly fleet and renewable LPG gas programs.",
       icon: Award,
     },
   ]
@@ -34,7 +34,7 @@ export default function OurStoryPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Our Story"
-        description="Dedication, innovation, and service excellence since 2022 in the propane industry."
+        description="Dedication, innovation, and service excellence since 2022 in the LPG gas industry."
       />
 
       {/* Introduction */}
@@ -43,7 +43,7 @@ export default function OurStoryPage() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Building Trust Since 2022</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              What started as a small family business has grown into one of the most trusted names in propane energy.
+              What started as a small family business has grown into one of the most trusted names in LPG gas energy.
               Our journey is marked by continuous innovation, unwavering commitment to safety, and dedication to serving
               our communities.
             </p>
@@ -101,14 +101,14 @@ export default function OurStoryPage() {
             <div className="glass-card p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-4 text-gradient">Our Mission</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To provide safe, reliable, and sustainable propane energy solutions while building lasting relationships
+                To provide safe, reliable, and sustainable LPG gas energy solutions while building lasting relationships
                 with our customers through exceptional service and innovative technology.
               </p>
             </div>
             <div className="glass-card p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-4 text-gradient">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To be the most trusted and innovative propane energy provider, leading the industry in sustainability,
+                To be the most trusted and innovative LPG gas energy provider, leading the industry in sustainability,
                 safety, and customer satisfaction while empowering communities we serve.
               </p>
             </div>

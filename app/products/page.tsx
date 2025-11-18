@@ -8,26 +8,26 @@ export default function ProductsPage() {
     {
       icon: Package,
       title: "Cylinders",
-      description: "Portable propane cylinders for residential, commercial, and recreational use.",
+      description: "Portable LPG gas cylinders for residential, commercial, and recreational use.",
       features: ["Multiple sizes available", "Exchange programs", "Safety certified", "Nationwide availability"],
       href: "/products/cylinders",
-      image: "/propane-cylinders-various-sizes.jpg",
+      image: "/cylinder2.jpeg",
     },
     {
       icon: Truck,
       title: "Bulk Gas",
-      description: "Large-scale propane solutions for homes, businesses, and industrial facilities.",
-      features: ["Custom tank sizing", "Automatic delivery", "Competitive pricing", "24/7 monitoring"],
+      description: "Large-scale LPG gas solutions for homes, businesses, and industrial facilities.",
+      features: ["Custom tank sizing", "Automatic delivery", "Competitive pricing", "Smart monitoring"],
       href: "/products/bulk-gas",
-      image: "/bulk-propane-tank-installation.jpg",
+      image: "/tank2.jpeg",
     },
     {
       icon: Wrench,
       title: "Regulators & Accessories",
-      description: "High-quality equipment and accessories for safe propane system operation.",
+      description: "High-quality equipment and accessories for safe LPG gas system operation.",
       features: ["Premium quality", "Expert installation", "Maintenance support", "Warranty included"],
       href: "/products/regulators",
-      image: "/propane-regulators-and-accessories.jpg",
+      image: "/regulator.png",
     },
   ]
 
@@ -35,7 +35,7 @@ export default function ProductsPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Our Products"
-        description="Comprehensive propane solutions designed to meet your residential, commercial, and industrial needs."
+        description="Comprehensive LPG gas solutions designed to meet your residential, commercial, and industrial needs."
       />
 
       {/* Introduction */}
@@ -44,7 +44,7 @@ export default function ProductsPage() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Quality Products for Every Need</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              From portable cylinders to large-scale bulk installations, we offer a complete range of propane products
+              From portable cylinders to large-scale bulk installations, we offer a complete range of LPG gas products
               backed by expert service and support.
             </p>
           </div>
@@ -110,7 +110,7 @@ export default function ProductsPage() {
           <div className="glass-card p-12 rounded-2xl text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Need Help Choosing?</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Our product specialists are here to help you find the perfect propane solution for your needs.
+              Our product specialists are here to help you find the perfect LPG gas solution for your needs.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">

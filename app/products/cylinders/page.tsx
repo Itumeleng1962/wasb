@@ -9,29 +9,29 @@ import Link from "next/link"
 export default function CylindersPage() {
   const cylinderSizes = [
     {
-      name: "9.1 kg Cylinder",
-      capacity: "9.1 kg / 17.8 liters",
+      name: "9 kg Cylinder",
+      capacity: "9 kg / 17.8 liters",
       uses: ["Grills", "Patio heaters", "Small appliances"],
       price: "R",
       popular: true,
     },
     {
-      name: "13.6 kg Cylinder",
-      capacity: "13.6 kg / 26.5 liters",
+      name: "14 kg Cylinder",
+      capacity: "14 kg / 26.7 liters",
       uses: ["RVs", "Forklifts", "Commercial cooking"],
       price: "R",
       popular: false,
     },
     {
-      name: "18.1 kg Cylinder",
-      capacity: "18.1 kg / 35.6 liters",
+      name: "19 kg Cylinder",
+      capacity: "19 kg / 36.0 liters",
       uses: ["Industrial equipment", "Large appliances", "Construction"],
       price: "R",
       popular: false,
     },
     {
-      name: "45.4 kg Cylinder",
-      capacity: "45.4 kg / 89.3 liters",
+      name: "48 kg Cylinder",
+      capacity: "48 kg / 95.0 liters",
       uses: ["Commercial operations", "Temporary heating", "Events"],
       price: "R",
       popular: false,
@@ -50,8 +50,8 @@ export default function CylindersPage() {
   return (
     <div className="min-h-screen">
       <PageHeader
-        title="Propane Cylinders"
-        description="Portable propane solutions for residential, commercial, and recreational applications."
+        title="LPG Gas Cylinders"
+        description="Portable LPG Gas solutions for residential, commercial, and recreational applications."
       />
 
       {/* Introduction */}
@@ -59,9 +59,9 @@ export default function CylindersPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Reliable Portable Propane</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Reliable Portable LPG Gas</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our propane cylinders are perfect for grilling, heating, and powering various appliances. Available in
+                Our LPG gas cylinders are perfect for grilling, heating, and powering various appliances. Available in
                 multiple sizes to meet your specific needs.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -83,7 +83,7 @@ export default function CylindersPage() {
             </div>
             <div className="relative">
               <div className="glass-card p-6 rounded-2xl">
-                <img src="/propane-gas-cylinders-in-various-sizes.jpg" alt="Propane cylinders" className="rounded-lg w-full" />
+                <img src="/propane-gas-cylinders-in-various-sizes.jpg" alt="LPG Gas cylinders" className="rounded-lg w-full" />
               </div>
             </div>
           </div>

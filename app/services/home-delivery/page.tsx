@@ -23,7 +23,7 @@ export default function HomeDeliveryPage() {
     {
       icon: Smartphone,
       title: "Online Account",
-      description: "Manage your account, view delivery history, and make payments online 24/7.",
+      description: "Manage your account, view delivery history, and make payments online anytime.",
     },
   ]
 
@@ -36,7 +36,7 @@ export default function HomeDeliveryPage() {
     {
       step: "2",
       title: "We Monitor",
-      description: "Our system tracks your propane usage and tank levels automatically.",
+      description: "Our system tracks your LPG gas usage and tank levels automatically.",
     },
     {
       step: "3",
@@ -56,7 +56,7 @@ export default function HomeDeliveryPage() {
     "Competitive pricing",
     "Flexible payment options",
     "Priority scheduling",
-    "24/7 emergency service",
+    "Emergency service hotline",
     "Expert customer support",
     "Free tank maintenance",
   ]
@@ -65,7 +65,7 @@ export default function HomeDeliveryPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Home Delivery Service"
-        description="Reliable, automatic propane delivery for your home with convenient monitoring and flexible billing."
+        description="Reliable, automatic LPG gas delivery for your home with convenient monitoring and flexible billing."
       />
 
       {/* Introduction */}
@@ -73,9 +73,9 @@ export default function HomeDeliveryPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Never Run Out of Propane</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Never Run Out of LPG Gas</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our home delivery service takes the worry out of propane management. With automatic monitoring and
+                Our home delivery service takes the worry out of LPG gas management. With automatic monitoring and
                 scheduled deliveries, you can focus on what matters most while we ensure your home stays warm and
                 comfortable.
               </p>
@@ -108,7 +108,7 @@ export default function HomeDeliveryPage() {
           <div>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Service Features</h2>
-              <p className="text-lg text-muted-foreground">Everything you need for hassle-free propane delivery</p>
+              <p className="text-lg text-muted-foreground">Everything you need for hassle-free LPG gas delivery</p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -188,9 +188,9 @@ export default function HomeDeliveryPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card p-12 rounded-2xl text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Switch to Automatic Delivery?</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Join thousands of homeowners who trust WASB Gas Distributers for reliable propane delivery.
-            </p>
+              <p className="text-lg text-muted-foreground mb-8">
+                Join thousands of homeowners who trust WASB Gas Distributers for reliable LPG gas delivery.
+              </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">
                 <Button size="lg" className="gradient-accent text-white">

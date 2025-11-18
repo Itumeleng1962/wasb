@@ -25,7 +25,7 @@ export default function CustomerPortalPage() {
     {
       icon: Calendar,
       title: "Delivery Schedule",
-      description: "View and manage your propane delivery schedule",
+      description: "View and manage your LPG gas delivery schedule",
     },
     {
       icon: CreditCard,
@@ -140,7 +140,7 @@ export default function CustomerPortalPage() {
               <div className="mb-8">
                 <h2 className="text-2xl font-bold mb-4">Portal Features</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Manage your propane account with ease. Our customer portal gives you 24/7 access to your account
+                  Manage your LPG gas account with ease. Our customer portal gives you online access to your account
                   information and services.
                 </p>
               </div>

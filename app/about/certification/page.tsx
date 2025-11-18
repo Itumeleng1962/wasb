@@ -7,7 +7,7 @@ export default function CertificationPage() {
     {
       icon: Shield,
       title: "NPGA Certified",
-      description: "National Propane Gas Association certification for safety and operational excellence.",
+      description: "National LPG Gas Association certification for safety and operational excellence.",
       year: "Since 2022",
     },
     {
@@ -25,7 +25,7 @@ export default function CertificationPage() {
     {
       icon: CheckCircle,
       title: "DOT Certified",
-      description: "Department of Transportation certification for safe propane transportation.",
+      description: "Department of Transportation certification for safe LPG gas transportation.",
       year: "Since 2022",
     },
   ]
@@ -33,7 +33,7 @@ export default function CertificationPage() {
   const safetyStats = [
     { value: "Zero", label: "Major Incidents (5 Years)" },
     { value: "100%", label: "Safety Training Completion" },
-    { value: "24/7", label: "Emergency Response" },
+    { value: "2 hr", label: "Emergency Response Time" },
     { value: "500+", label: "Safety Inspections/Year" },
   ]
 

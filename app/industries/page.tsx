@@ -1,6 +1,6 @@
 import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, UtensilsCrossed, Factory, Heart } from "lucide-react"
+import { ArrowRight, UtensilsCrossed, Factory } from "lucide-react"
 import Link from "next/link"
 
 export default function IndustriesPage() {
@@ -8,7 +8,7 @@ export default function IndustriesPage() {
     {
       icon: UtensilsCrossed,
       title: "Hospitality",
-      description: "Reliable propane solutions for restaurants, hotels, and food service operations.",
+      description: "Reliable LPG gas solutions for restaurants, hotels, and food service operations.",
       features: [
         "Commercial kitchen equipment",
         "Water heating systems",
@@ -21,18 +21,10 @@ export default function IndustriesPage() {
     {
       icon: Factory,
       title: "Manufacturing",
-      description: "Industrial propane for production facilities, forklifts, and manufacturing processes.",
+      description: "Industrial LPG gas for production facilities, forklifts, and manufacturing processes.",
       features: ["Forklift fuel", "Process heating", "Metal treatment", "Material handling equipment"],
       href: "/industries/manufacturing",
       image: "/manufacturing-facility-propane.jpg",
-    },
-    {
-      icon: Heart,
-      title: "Healthcare",
-      description: "Critical propane services for hospitals, clinics, and healthcare facilities.",
-      features: ["Emergency generators", "Sterilization equipment", "Heating systems", "Backup power solutions"],
-      href: "/industries/healthcare",
-      image: "/healthcare-facility-propane.jpg",
     },
   ]
 
@@ -40,7 +32,7 @@ export default function IndustriesPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Industries We Serve"
-        description="Specialized propane solutions tailored to meet the unique needs of your industry."
+        description="Specialized LPG gas solutions tailored to meet the unique needs of your industry."
       />
 
       {/* Introduction */}
@@ -49,7 +41,7 @@ export default function IndustriesPage() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Industry-Specific Expertise</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Every industry has unique energy requirements. Our specialized propane solutions are designed to meet the
+              Every industry has unique energy requirements. Our specialized LPG gas solutions are designed to meet the
               specific demands of your sector, backed by expert knowledge and reliable service.
             </p>
           </div>
@@ -125,8 +117,8 @@ export default function IndustriesPage() {
                 <div className="text-sm text-muted-foreground">Years of Experience</div>
               </div>
               <div className="glass-card p-6 rounded-xl text-center">
-                <div className="text-4xl font-bold text-accent mb-2">24/7</div>
-                <div className="text-sm text-muted-foreground">Emergency Service</div>
+                <div className="text-4xl font-bold text-accent mb-2">2 hr</div>
+                <div className="text-sm text-muted-foreground">Emergency Dispatch</div>
               </div>
               <div className="glass-card p-6 rounded-xl text-center">
                 <div className="text-4xl font-bold text-accent mb-2">99.9%</div>
@@ -143,7 +135,7 @@ export default function IndustriesPage() {
           <div className="glass-card p-12 rounded-2xl text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Discuss Your Industry Needs?</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Our industry specialists are ready to create a customized propane solution for your business.
+              Our industry specialists are ready to create a customized LPG gas solution for your business.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">

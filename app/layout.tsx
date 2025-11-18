@@ -1,9 +1,11 @@
 import type React from "react"
+import { Suspense } from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { LoadingOverlay } from "@/components/loading-overlay"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,9 +14,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "WASB Gas Distributers - Premium Propane & Energy Solutions",
+  title: "WASB Gas Distributers - Premium LPG Gas & Energy Solutions",
   description:
-    "Your trusted partner for reliable propane delivery and energy services. Experience premium service with modern convenience.",
+    "Your trusted partner for reliable LPG gas delivery and energy services. Experience premium service with modern convenience.",
   generator: "v0.app",
 }
 
@@ -27,7 +29,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Navigation />
-        {children}
+        <Suspense fallback={<LoadingOverlay />}>
+          {children}
+        </Suspense>
         <Footer />
       </body>
     </html>

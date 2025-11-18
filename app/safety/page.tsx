@@ -8,7 +8,7 @@ export default function SafetyPage() {
     {
       icon: Flame,
       title: "Proper Storage",
-      description: "Store propane cylinders upright in well-ventilated outdoor areas away from heat sources.",
+      description: "Store LPG gas cylinders upright in well-ventilated outdoor areas away from heat sources.",
     },
     {
       icon: AlertTriangle,
@@ -18,7 +18,7 @@ export default function SafetyPage() {
     {
       icon: CheckCircle,
       title: "Regular Inspections",
-      description: "Have your propane system inspected annually by certified professionals.",
+      description: "Have your LPG gas system inspected annually by certified professionals.",
     },
     {
       icon: Shield,
@@ -41,7 +41,7 @@ export default function SafetyPage() {
     {
       step: "3",
       title: "Call for Help",
-      description: "Once at a safe distance, call 911 and your propane supplier.",
+      description: "Once at a safe distance, call 911 and your LPG gas supplier.",
     },
     {
       step: "4",
@@ -53,12 +53,12 @@ export default function SafetyPage() {
   const resources = [
     {
       title: "Safety Manual",
-      description: "Comprehensive guide to propane safety and best practices",
+      description: "Comprehensive guide to LPG gas safety and best practices",
       link: "#",
     },
     {
       title: "Installation Guidelines",
-      description: "Proper installation procedures for propane systems",
+      description: "Proper installation procedures for LPG gas systems",
       link: "#",
     },
     {
@@ -77,7 +77,7 @@ export default function SafetyPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Safety & Compliance"
-        description="Your safety is our top priority. Learn about propane safety, emergency procedures, and compliance standards."
+        description="Your safety is our top priority. Learn about LPG gas safety, emergency procedures, and compliance standards."
       />
 
       {/* Emergency Contact */}
@@ -87,7 +87,7 @@ export default function SafetyPage() {
             <div className="flex items-center gap-4">
               <Phone className="h-12 w-12" />
               <div>
-                <h3 className="text-2xl font-bold">24/7 Emergency Service</h3>
+                <h3 className="text-2xl font-bold">Emergency Service Line</h3>
                 <p className="text-white/90">If you smell gas, evacuate and call immediately</p>
               </div>
             </div>
@@ -100,12 +100,48 @@ export default function SafetyPage() {
         </div>
       </section>
 
+      {/* Facility Compliance */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-sm font-semibold text-accent mb-2 uppercase tracking-wide">On-site controls</p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Strictly Managed Filling Station</h2>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                These photos come straight from our Zandspruit filling bay. Every customer interaction happens inside a
+                controlled, access-restricted area with visible safety reminders.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "No smoking, phone usage or open flames inside the filling zone",
+                  "Dedicated fire extinguishers, hose reels and sand buckets within arm's reach",
+                  "Locked gates that separate the public area from the transfer manifold",
+                  "Clearly marked venting paths and unobstructed emergency exits",
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-muted-foreground">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden">
+              <img
+                src="/work.jpeg"
+                alt="WASB secure LPG filling station with safety signage"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Safety Tips */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Essential Safety Tips</h2>
-            <p className="text-lg text-muted-foreground">Follow these guidelines to ensure safe propane use</p>
+            <p className="text-lg text-muted-foreground">Follow these guidelines to ensure safe LPG gas use</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -196,7 +232,7 @@ export default function SafetyPage() {
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                      <span className="text-muted-foreground">24/7 emergency response</span>
+                      <span className="text-muted-foreground">Emergency response team</span>
                     </li>
                   </ul>
                 </div>

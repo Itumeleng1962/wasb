@@ -8,7 +8,7 @@ export default function ManufacturingPage() {
     {
       icon: Truck,
       title: "Forklift Fuel",
-      description: "Clean, efficient propane fuel for material handling equipment and warehouse operations.",
+      description: "Clean, efficient LPG gas fuel for material handling equipment and warehouse operations.",
       benefits: ["Lower emissions", "Reduced maintenance", "Indoor/outdoor use", "Cost effective"],
     },
     {
@@ -35,7 +35,7 @@ export default function ManufacturingPage() {
     "Bulk delivery and storage",
     "Volume-based pricing",
     "Scheduled deliveries",
-    "Emergency service 24/7",
+    "Emergency service hotline",
     "Technical consultation",
     "Equipment installation",
     "Safety training",
@@ -49,7 +49,7 @@ export default function ManufacturingPage() {
   const caseStudy = {
     title: "Automotive Parts Manufacturer",
     challenge: "High forklift fuel costs and frequent equipment downtime",
-    solution: "Converted fleet to propane with optimized delivery schedule",
+    solution: "Converted fleet to LPG gas with optimized delivery schedule",
     results: [
       { metric: "30%", label: "Cost Reduction" },
       { metric: "45%", label: "Less Downtime" },
@@ -61,7 +61,7 @@ export default function ManufacturingPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Manufacturing Solutions"
-        description="Industrial propane for production facilities, material handling, and manufacturing processes."
+        description="Industrial LPG gas for production facilities, material handling, and manufacturing processes."
       />
 
       {/* Introduction */}
@@ -71,12 +71,12 @@ export default function ManufacturingPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Fuel Your Manufacturing Excellence</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Manufacturing operations demand reliable, cost-effective energy solutions. Our industrial propane
+                Manufacturing operations demand reliable, cost-effective energy solutions. Our industrial LPG gas
                 services provide the power and efficiency you need to maintain productivity and meet production goals.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                From forklift fleets to process heating, we deliver comprehensive propane solutions tailored to your
-                manufacturing environment, backed by technical expertise and 24/7 support.
+                From forklift fleets to process heating, we deliver comprehensive LPG gas solutions tailored to your
+                manufacturing environment, backed by technical expertise and responsive support.
               </p>
               <Link href="/contact">
                 <Button className="gradient-accent text-white">
@@ -99,7 +99,7 @@ export default function ManufacturingPage() {
           <div>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Manufacturing Applications</h2>
-              <p className="text-lg text-muted-foreground">Propane solutions for every production need</p>
+              <p className="text-lg text-muted-foreground">LPG Gas solutions for every production need</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -186,7 +186,7 @@ export default function ManufacturingPage() {
           <div className="glass-card p-12 rounded-2xl text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Optimize Your Manufacturing Operations</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Let our manufacturing specialists create a customized propane solution for your facility.
+              Let our manufacturing specialists create a customized LPG gas solution for your facility.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">

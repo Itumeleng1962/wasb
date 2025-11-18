@@ -27,32 +27,32 @@ export default function OrderPage() {
   const products = [
     {
       id: "cylinder-9kg",
-      name: "9.1 kg Cylinder",
-      capacity: "9.1 kg / 17.8 liters",
+      name: "9 kg Cylinder",
+      capacity: "9 kg / 17.8 liters",
       price: 49.99,
       description: "Perfect for grills, patio heaters, and small appliances",
       popular: true,
     },
     {
       id: "cylinder-14kg",
-      name: "13.6 kg Cylinder",
-      capacity: "13.6 kg / 26.5 liters",
+      name: "14 kg Cylinder",
+      capacity: "14 kg / 26.7 liters",
       price: 79.99,
       description: "Ideal for RVs, forklifts, and commercial cooking",
       popular: false,
     },
     {
-      id: "cylinder-18kg",
-      name: "18.1 kg Cylinder",
-      capacity: "18.1 kg / 35.6 liters",
+      id: "cylinder-19kg",
+      name: "19 kg Cylinder",
+      capacity: "19 kg / 36.0 liters",
       price: 99.99,
       description: "Great for industrial equipment and large appliances",
       popular: false,
     },
     {
-      id: "cylinder-45kg",
-      name: "45.4 kg Cylinder",
-      capacity: "45.4 kg / 89.3 liters",
+      id: "cylinder-48kg",
+      name: "48 kg Cylinder",
+      capacity: "48 kg / 95.0 liters",
       price: 199.99,
       description: "Perfect for commercial operations and events",
       popular: false,
@@ -61,7 +61,7 @@ export default function OrderPage() {
       id: "regulator-pressure",
       name: "Pressure Regulator",
       price: 25.99,
-      description: "High-quality regulator for safe propane pressure control",
+      description: "High-quality regulator for safe LPG gas pressure control",
       popular: false,
     },
     {
@@ -151,8 +151,40 @@ export default function OrderPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Place Your Order"
-        description="Select your propane products and we'll deliver them to your location."
+        description="Select your LPG gas products and we'll deliver them to your location."
       />
+
+      <section className="py-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="glass-card p-8 rounded-2xl grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <p className="text-sm font-semibold text-accent mb-2 uppercase tracking-wide">Need it fast?</p>
+              <h2 className="text-3xl font-bold mb-4">Call or WhatsApp Our Depot</h2>
+              <p className="text-lg text-muted-foreground mb-4">
+                Share this flyer with your team. It highlights our LPG sizes (9kg, 14kg, 19kg and 48kg) and doubles as a
+                quick-reference card for store managers.
+              </p>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-center gap-3">
+                  <Phone className="h-5 w-5 text-accent" />
+                  <span>Call or WhatsApp: 078 058 4824 / 067 783 9400</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Mail className="h-5 w-5 text-accent" />
+                  <span>orders: admin@wasbdistributers.co.za</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <MapPin className="h-5 w-5 text-accent" />
+                  <span>Portion 22 Cnr Deysel Street & Bothma Road, Zandspruit</span>
+                </li>
+              </ul>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden">
+              <img src="/pricing.jpeg" alt="WASB order flyer" className="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

@@ -14,7 +14,7 @@ export default function HealthcarePage() {
     {
       icon: Flame,
       title: "Sterilization Equipment",
-      description: "Propane-powered autoclaves and sterilization systems for medical instruments and supplies.",
+      description: "LPG Gas-powered autoclaves and sterilization systems for medical instruments and supplies.",
       benefits: ["Consistent performance", "Cost effective", "Precise temperature", "Reliable operation"],
     },
     {
@@ -32,7 +32,7 @@ export default function HealthcarePage() {
   ]
 
   const benefits = [
-    "24/7 emergency service",
+    "Priority emergency service",
     "Priority delivery",
     "Compliance expertise",
     "Regular maintenance",
@@ -61,7 +61,7 @@ export default function HealthcarePage() {
     <div className="min-h-screen">
       <PageHeader
         title="Healthcare Solutions"
-        description="Critical propane services for hospitals, clinics, and healthcare facilities."
+        description="Critical LPG gas services for hospitals, clinics, and healthcare facilities."
       />
 
       {/* Introduction */}
@@ -71,14 +71,14 @@ export default function HealthcarePage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Powering Critical Healthcare Services</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Healthcare facilities require absolute reliability. Our propane solutions ensure your critical systems
+                Healthcare facilities require absolute reliability. Our LPG gas solutions ensure your critical systems
                 remain operational, from emergency generators to sterilization equipment, supporting patient care when
                 it matters most.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 We understand the unique requirements of healthcare environments, including strict compliance standards
-                and the need for 24/7 availability. Our specialized service includes priority response, regular
-                maintenance, and expert technical support.
+                and extended operating hours. Our specialized service includes priority response, regular maintenance,
+                and expert technical support.
               </p>
               <Link href="/contact">
                 <Button className="gradient-accent text-white">
@@ -97,7 +97,7 @@ export default function HealthcarePage() {
           <div>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Healthcare Applications</h2>
-              <p className="text-lg text-muted-foreground">Essential propane solutions for patient care</p>
+              <p className="text-lg text-muted-foreground">Essential LPG gas solutions for patient care</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -192,7 +192,7 @@ export default function HealthcarePage() {
                 <div className="p-6 bg-muted/30 rounded-lg">
                   <h3 className="font-bold mb-3">Backup Supply</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Strategic propane reserves and rapid response protocols for extended outages.
+                    Strategic LPG gas reserves and rapid response protocols for extended outages.
                   </p>
                 </div>
                 <div className="p-6 bg-muted/30 rounded-lg">
@@ -219,7 +219,7 @@ export default function HealthcarePage() {
           <div className="glass-card p-12 rounded-2xl text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ensure Your Facility's Reliability</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Contact our healthcare specialists to discuss your facility's propane needs.
+              Contact our healthcare specialists to discuss your facility's LPG gas needs.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact">

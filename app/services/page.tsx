@@ -8,7 +8,7 @@ export default function ServicesPage() {
     {
       icon: Truck,
       title: "Home Delivery",
-      description: "Reliable propane delivery for residential customers with automatic scheduling and monitoring.",
+      description: "Reliable LPG gas delivery for residential customers with automatic scheduling and monitoring.",
       features: ["Automatic delivery", "Tank monitoring", "Flexible scheduling", "Budget billing"],
       href: "/services/home-delivery",
       image: "/propane-delivery-truck-residential.jpg",
@@ -16,7 +16,7 @@ export default function ServicesPage() {
     {
       icon: Factory,
       title: "Industrial Supply",
-      description: "Comprehensive propane solutions for commercial and industrial operations of any size.",
+      description: "Comprehensive LPG gas solutions for commercial and industrial operations of any size.",
       features: ["Bulk supply", "Priority service", "Custom solutions", "Dedicated support"],
       href: "/services/industrial-supply",
       image: "/industrial-propane-facility.jpg",
@@ -34,8 +34,8 @@ export default function ServicesPage() {
   const benefits = [
     {
       icon: Clock,
-      title: "24/7 Availability",
-      description: "Round-the-clock emergency service and support whenever you need us.",
+      title: "Responsive Availability",
+      description: "Extended-hours emergency service and support when it matters most.",
     },
     {
       icon: Shield,
@@ -53,16 +53,16 @@ export default function ServicesPage() {
     <div className="min-h-screen">
       <PageHeader
         title="Our Services"
-        description="Comprehensive propane services designed to meet your residential, commercial, and industrial needs."
+        description="Comprehensive LPG gas services designed to meet your residential, commercial, and industrial needs."
       />
 
       {/* Introduction */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Complete Propane Solutions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Complete LPG Gas Solutions</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              From delivery to maintenance, we provide end-to-end propane services backed by experience since 2022 and
+              From delivery to maintenance, we provide end-to-end LPG gas services backed by experience since 2022 and
               an unwavering commitment to customer satisfaction.
             </p>
           </div>
