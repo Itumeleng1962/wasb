@@ -43,7 +43,6 @@ export function Footer() {
     ],
     support: [
       { name: "Customer Portal", href: "/portal/customer" },
-      { name: "Dealer Portal", href: "/portal/dealer" },
       { name: "Safety & Compliance", href: "/safety" },
       { name: "Contact Us", href: "/contact" },
     ],

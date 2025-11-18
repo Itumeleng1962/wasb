@@ -95,8 +95,8 @@ export function Hero() {
             </div>
             <div className="glass-card rounded-2xl p-8 text-center premium-hover luxury-border">
               <Clock className="h-10 w-10 text-accent mx-auto mb-4 pulse-primary" />
-              <h3 className="font-semibold text-foreground mb-2 text-lg">24/7 Support</h3>
-              <p className="text-sm text-muted-foreground">Always Available</p>
+              <h3 className="font-semibold text-foreground mb-2 text-lg">Responsive Support</h3>
+              <p className="text-sm text-muted-foreground">Extended Hours Team</p>
             </div>
             <div className="glass-card rounded-2xl p-8 text-center premium-hover luxury-border">
               <Flame className="h-10 w-10 text-accent mx-auto mb-4 pulse-primary" />

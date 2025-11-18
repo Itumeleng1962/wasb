@@ -128,7 +128,7 @@ export function CustomerPortal() {
                   <span className="font-semibold text-foreground">{tank.capacity}</span>
                 </div>
                 <p className="text-sm text-muted-foreground mt-1">{tank.address}</p>
-                <p className="text-sm text-muted-foreground">{tank.capacity} Propane Fuel Tank</p>
+                <p className="text-sm text-muted-foreground">{tank.capacity} LPG Gas Fuel Tank</p>
               </div>
 
               {/* Fill level with thick bar and % inside */}

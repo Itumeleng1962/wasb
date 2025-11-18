@@ -56,21 +56,13 @@ export function Navigation() {
       submenu: [
         { name: "Hospitality", href: "/industries/hospitality" },
         { name: "Manufacturing", href: "/industries/manufacturing" },
-        { name: "Healthcare", href: "/industries/healthcare" },
       ],
     },
     { name: "Safety", href: "/safety" },
     { name: "News", href: "/news" },
     { name: "Careers", href: "/careers" },
     { name: "Contact", href: "/contact" },
-    {
-      name: "Portals",
-      href: "#",
-      submenu: [
-        { name: "Customer Portal", href: "/portal/customer" },
-        { name: "Dealer Portal", href: "/portal/dealer" },
-      ],
-    },
+    { name: "Customer Portal", href: "/portal/customer" },
   ]
 
   return (

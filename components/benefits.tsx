@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: Award,
     title: "Industry Leading Expertise",
-    description: "Since 2022, delivering exceptional propane services with certified professionals.",
+    description: "Since 2022, delivering exceptional LPG gas services with certified professionals.",
   },
   {
     icon: Banknote,
@@ -15,17 +15,17 @@ const benefits = [
   {
     icon: Leaf,
     title: "Eco-Friendly Energy",
-    description: "Propane is a clean-burning, low-carbon alternative that reduces your environmental impact.",
+    description: "LPG gas is a clean-burning, low-carbon alternative that reduces your environmental impact.",
   },
   {
     icon: Users,
     title: "Customer-First Service",
-    description: "24/7 support, emergency services, and dedicated account managers for your peace of mind.",
+    description: "Responsive support, emergency callouts, and dedicated account managers for your peace of mind.",
   },
   {
     icon: Zap,
     title: "Reliable & Efficient",
-    description: "Consistent delivery schedules and smart monitoring ensure you never run out of propane.",
+    description: "Consistent delivery schedules and smart monitoring ensure you never run out of LPG gas.",
   },
   {
     icon: HeartHandshake,
@@ -45,7 +45,7 @@ export function Benefits() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gradient mb-4 text-balance">Why Choose WASB Gas Distributers?</h2>
           <p className="text-lg text-muted-foreground text-pretty">
-            We're more than just a propane supplier—we're your trusted energy partner committed to excellence.
+            We're more than just an LPG gas supplier—we're your trusted energy partner committed to excellence.
           </p>
         </div>
 
@@ -80,8 +80,8 @@ export function Benefits() {
             <div className="text-sm text-muted-foreground">Happy Customers</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl sm:text-5xl font-bold text-gradient mb-2">24/7</div>
-            <div className="text-sm text-muted-foreground">Support Available</div>
+            <div className="text-4xl sm:text-5xl font-bold text-gradient mb-2">2 hr</div>
+            <div className="text-sm text-muted-foreground">Avg Support Response</div>
           </div>
           <div className="text-center">
             <div className="text-4xl sm:text-5xl font-bold text-gradient mb-2">100%</div>
