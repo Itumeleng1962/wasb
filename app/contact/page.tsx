@@ -30,22 +30,22 @@ export default function ContactPage() {
       details: "+27 11 568 7912",
       description: "Call us for immediate assistance",
     },
-    {
-      icon: Phone,
-      title: "Phone (Courage)",
-      details: "+27 83 297 6995",
-      description: "Contact Courage directly",
-    },
-    {
-      icon: Phone,
-      title: "Phone (Noah)",
-      details: "+27 61 654 7229",
-      description: "Contact Noah directly",
-    },
+    // {
+    //  details: "+27 83 297 6995",
+    //   description   icon: Phone,
+    //   title: "Phone (Courage)",
+    // : "Contact Courage directly",
+    // },
+    // {
+    //   icon: Phone,
+    //   title: "Phone (Noah)",
+    //   details: "+27 61 654 7229",
+    //   description: "Contact Noah directly",
+    // },
     {
       icon: MessageSquare,
       title: "WhatsApp (Zed)",
-      details: "WhatsApp 078 058 4824 / 067 783 9400",
+      details: "078 058 4824 / 067 783 9400",
       description: "Zed – Depot Manager",
     },
     {
