@@ -29,6 +29,7 @@ export function Navigation() {
       submenu: [
         { name: "Our Story", href: "/about/our-story" },
         { name: "Leadership", href: "/about/leadership" },
+        { name: "Our Team", href: "/about#workers" },
         { name: "Certification & Safety", href: "/about/certification" },
       ],
     },
