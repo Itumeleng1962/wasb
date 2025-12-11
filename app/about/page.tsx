@@ -2,6 +2,7 @@ import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Users, Award, Shield, Target } from "lucide-react"
 import Link from "next/link"
+import { Workers } from "@/components/workers"
 
 export default function AboutPage() {
   const values = [
@@ -125,6 +126,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Workers Section */}
+      <Workers />
 
       {/* CTA Section */}
       <section className="py-20 bg-muted/30">
